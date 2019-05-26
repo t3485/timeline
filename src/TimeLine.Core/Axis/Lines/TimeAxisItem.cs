@@ -1,12 +1,11 @@
-﻿using Abp.Domain.Entities;
-using Abp.Domain.Entities.Auditing;
+﻿using Abp.Domain.Entities.Auditing;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using TimeLine.Axis.Lines;
 
-namespace TimeLine.Axis
+namespace TimeLine.Axis.Lines
 {
-    public class TimeAxisItem : CreationAuditedAggregateRoot
+    public class TimeAxisItem : CreationAuditedEntity
     {
         public DateTime? StartTime { get; private set; }
 
@@ -23,8 +22,6 @@ namespace TimeLine.Axis
         public string ImgPath { get; private set; }
 
         public virtual TimeAxis TimeAxis { get; private set; }
-
-        public virtual ICollection<TimeAxisItemAuthority> TimeAxisItemAuthority { get; private set; }
 
         private TimeAxisItem() { }
 

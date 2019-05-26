@@ -3,13 +3,21 @@ using Abp.Zero.EntityFrameworkCore;
 using TimeLine.Authorization.Roles;
 using TimeLine.Authorization.Users;
 using TimeLine.MultiTenancy;
-using TimeLine.Axis;
+using TimeLine.Axis.Items;
+using TimeLine.Axis.Lines;
+using TimeLine.Axis.Filters;
 
 namespace TimeLine.EntityFrameworkCore
 {
     public class TimeLineDbContext : AbpZeroDbContext<Tenant, Role, User, TimeLineDbContext>
     {
         /* Define a DbSet for each entity of the application */
+
+        public virtual DbSet<TimeAxis> TimeAxes { get; set; }
+        public virtual DbSet<TimeAxis> TimeAxisAuthority { get; set; }
+        public virtual DbSet<TimeAxis> TimeAxisItemAuthority { get; set; }
+        public virtual DbSet<TimeAxis> TimeAxisFilter { get; set; }
+        public virtual DbSet<TimeAxis> TimeAxisItem { get; set; }
 
         public TimeLineDbContext(DbContextOptions<TimeLineDbContext> options)
             : base(options)

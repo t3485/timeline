@@ -1,10 +1,9 @@
 ﻿using Abp.Domain.Entities;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using TimeLine.Authorization.Users;
+using TimeLine.Axis.Lines;
 
-namespace TimeLine.Axis
+namespace TimeLine.Axis.Filters
 {
     public class TimeAxisFilter : AggregateRoot
     {

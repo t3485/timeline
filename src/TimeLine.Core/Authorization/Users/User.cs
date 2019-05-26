@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using Abp.Authorization.Users;
 using Abp.Extensions;
-using TimeLine.Axis;
+using TimeLine.Axis.Filters;
+using TimeLine.Axis.Lines;
 
 namespace TimeLine.Authorization.Users
 {
@@ -11,8 +12,6 @@ namespace TimeLine.Authorization.Users
         public const string DefaultPassword = "123qwe";
 
         public virtual ICollection<TimeAxisAuthority> TimeAxisAuthorities { get; private set; }
-
-        public virtual ICollection<TimeAxisItemAuthority> TimeAxisItemAuthorities { get; private set; }
 
         public virtual ICollection<TimeAxisFilter> TimeAxisFilters { get; private set; }
 
@@ -30,12 +29,26 @@ namespace TimeLine.Authorization.Users
                 Name = AdminUserName,
                 Surname = AdminUserName,
                 EmailAddress = emailAddress,
-                Roles = new List<UserRole>()
+                Roles = new List<UserRole>(),
+                TimeAxisAuthorities = new List<TimeAxisAuthority>(),
+                TimeAxisFilters = new List<TimeAxisFilter>()
             };
 
             user.SetNormalizedNames();
 
             return user;
         }
+
+        #region Auth
+        public void AddAuth(TimeAxisAuthority e)
+        {
+            TimeAxisAuthorities.Add(e);
+        }
+
+        public void RemoveAuth(TimeAxisAuthority e)
+        {
+            TimeAxisAuthorities.Remove(e);
+        }
+        #endregion
     }
 }
