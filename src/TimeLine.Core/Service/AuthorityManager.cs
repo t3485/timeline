@@ -48,10 +48,11 @@ namespace TimeLine.Service
                 throw new ArgumentNullException();
             if (types == null || types.Count() == 0)
                 return true;
+            //若为开放状态则不验证查看权限
+            if (types.Count() == 1 && types[0] == AuthorityType.View && line.IsPublic)
+                return true;
 
-            var hasAuth = line.TimeAxisAuthority
-                            .Where(x => x.User.Id == id)
-                            .Select(x => x.AuthorityType);
+            var hasAuth = line.GetAuthorities(id);
 
             return types.Except(hasAuth).Count() == 0;
         }
@@ -73,6 +74,17 @@ namespace TimeLine.Service
 
             line.AddAuth(auth);
             user.AddAuth(auth);
+
+            return line;
+        }
+
+        public TimeAxis AssignAllTo(User user, TimeAxis line)
+        {
+            AssignTo(user, line, AuthorityType.View);
+            AssignTo(user, line, AuthorityType.AddItem);
+            AssignTo(user, line, AuthorityType.AuditItem);
+            AssignTo(user, line, AuthorityType.DeleteItem);
+            AssignTo(user, line, AuthorityType.EditItem);
 
             return line;
         }

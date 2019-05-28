@@ -8,13 +8,13 @@ namespace TimeLine.Axis.Lines
 {
     public class TimeAxisAuthority : Entity
     {
-        public TimeAxis TimeAxis { get; private set; }
+        public virtual TimeAxis TimeAxis { get; private set; }
 
-        public AuthorityType AuthorityType { get; private set; }
+        public virtual AuthorityType AuthorityType { get; private set; }
 
-        public User User { get; private set; }
+        public virtual User User { get; private set; }
 
-        private TimeAxisAuthority() {  }
+        public TimeAxisAuthority() {  }
 
         public TimeAxisAuthority(AuthorityType type)
         {

@@ -6,10 +6,7 @@ using Abp.IdentityFramework;
 using Abp.Runtime.Session;
 using TimeLine.Authorization.Users;
 using TimeLine.MultiTenancy;
-using Abp.Domain.Entities.Auditing;
-using Abp.Domain.Entities;
-using TimeLine.Service;
-using Abp.Authorization;
+using Abp.UI;
 
 namespace TimeLine
 {
@@ -48,13 +45,9 @@ namespace TimeLine
             identityResult.CheckErrors(LocalizationManager);
         }
 
-        public void CheckIsCreatedUser(ICreationAudited entity)
+        protected virtual void Throw403Error()
         {
-            if (entity == null)
-                throw new EntityNotFoundException();
-
-            if (!entity.IsCreateUser(AbpSession.UserId))
-                throw new AbpAuthorizationException();
+            throw new UserFriendlyException("Forbidden");
         }
     }
 }

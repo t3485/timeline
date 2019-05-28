@@ -23,7 +23,7 @@ namespace TimeLine.Axis.Lines
 
         public virtual TimeAxis TimeAxis { get; private set; }
 
-        private TimeAxisItem() { }
+        public TimeAxisItem() { }
 
         public TimeAxisItem(string descript)
         {

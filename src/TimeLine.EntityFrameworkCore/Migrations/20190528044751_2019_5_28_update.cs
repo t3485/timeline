@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TimeLine.Migrations
 {
-    public partial class create_timeline : Migration
+    public partial class _2019_5_28_update : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -17,7 +17,9 @@ namespace TimeLine.Migrations
                     CreationTime = table.Column<DateTime>(nullable: false),
                     CreatorUserId = table.Column<long>(nullable: true),
                     Title = table.Column<string>(nullable: true),
-                    Describe = table.Column<string>(nullable: true)
+                    Describe = table.Column<string>(nullable: true),
+                    IsPublic = table.Column<bool>(nullable: false),
+                    OrderType = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -30,8 +32,8 @@ namespace TimeLine.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    AuthorizeType = table.Column<string>(nullable: true),
                     TimeAxisId = table.Column<int>(nullable: true),
+                    AuthorityType = table.Column<int>(nullable: false),
                     UserId = table.Column<long>(nullable: true)
                 },
                 constraints: table =>
@@ -109,33 +111,6 @@ namespace TimeLine.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "TimeAxisItemAuthority",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    AuthorizeType = table.Column<string>(nullable: true),
-                    TimeAxisItemId = table.Column<int>(nullable: true),
-                    UserId = table.Column<long>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TimeAxisItemAuthority", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_TimeAxisItemAuthority_TimeAxisItem_TimeAxisItemId",
-                        column: x => x.TimeAxisItemId,
-                        principalTable: "TimeAxisItem",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_TimeAxisItemAuthority_AbpUsers_UserId",
-                        column: x => x.UserId,
-                        principalTable: "AbpUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_TimeAxisAuthority_TimeAxisId",
                 table: "TimeAxisAuthority",
@@ -160,16 +135,6 @@ namespace TimeLine.Migrations
                 name: "IX_TimeAxisItem_TimeAxisId",
                 table: "TimeAxisItem",
                 column: "TimeAxisId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TimeAxisItemAuthority_TimeAxisItemId",
-                table: "TimeAxisItemAuthority",
-                column: "TimeAxisItemId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TimeAxisItemAuthority_UserId",
-                table: "TimeAxisItemAuthority",
-                column: "UserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -179,9 +144,6 @@ namespace TimeLine.Migrations
 
             migrationBuilder.DropTable(
                 name: "TimeAxisFilter");
-
-            migrationBuilder.DropTable(
-                name: "TimeAxisItemAuthority");
 
             migrationBuilder.DropTable(
                 name: "TimeAxisItem");

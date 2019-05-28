@@ -10,14 +10,14 @@ using TimeLine.EntityFrameworkCore;
 namespace TimeLine.Migrations
 {
     [DbContext(typeof(TimeLineDbContext))]
-    [Migration("20190525025530_create_timeline")]
-    partial class create_timeline
+    [Migration("20190528044751_2019_5_28_update")]
+    partial class _2019_5_28_update
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.1-servicing-10028")
+                .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -1035,47 +1035,7 @@ namespace TimeLine.Migrations
                     b.ToTable("AbpUsers");
                 });
 
-            modelBuilder.Entity("TimeLine.Models.Axis.TimeAxis", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("CreationTime");
-
-                    b.Property<long?>("CreatorUserId");
-
-                    b.Property<string>("Describe");
-
-                    b.Property<string>("Title");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TimeAxis");
-                });
-
-            modelBuilder.Entity("TimeLine.Models.Axis.TimeAxisAuthority", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("AuthorizeType");
-
-                    b.Property<int?>("TimeAxisId");
-
-                    b.Property<long?>("UserId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("TimeAxisId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("TimeAxisAuthority");
-                });
-
-            modelBuilder.Entity("TimeLine.Models.Axis.TimeAxisFilter", b =>
+            modelBuilder.Entity("TimeLine.Axis.Filters.TimeAxisFilter", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1102,7 +1062,51 @@ namespace TimeLine.Migrations
                     b.ToTable("TimeAxisFilter");
                 });
 
-            modelBuilder.Entity("TimeLine.Models.Axis.TimeAxisItem", b =>
+            modelBuilder.Entity("TimeLine.Axis.Lines.TimeAxis", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<string>("Describe");
+
+                    b.Property<bool>("IsPublic");
+
+                    b.Property<int>("OrderType");
+
+                    b.Property<string>("Title");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TimeAxis");
+                });
+
+            modelBuilder.Entity("TimeLine.Axis.Lines.TimeAxisAuthority", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AuthorityType");
+
+                    b.Property<int?>("TimeAxisId");
+
+                    b.Property<long?>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TimeAxisId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("TimeAxisAuthority");
+                });
+
+            modelBuilder.Entity("TimeLine.Axis.Lines.TimeAxisItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1133,27 +1137,6 @@ namespace TimeLine.Migrations
                     b.HasIndex("TimeAxisId");
 
                     b.ToTable("TimeAxisItem");
-                });
-
-            modelBuilder.Entity("TimeLine.Models.Axis.TimeAxisItemAuthority", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("AuthorizeType");
-
-                    b.Property<int?>("TimeAxisItemId");
-
-                    b.Property<long?>("UserId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("TimeAxisItemId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("TimeAxisItemAuthority");
                 });
 
             modelBuilder.Entity("TimeLine.MultiTenancy.Tenant", b =>
@@ -1356,20 +1339,9 @@ namespace TimeLine.Migrations
                         .HasForeignKey("LastModifierUserId");
                 });
 
-            modelBuilder.Entity("TimeLine.Models.Axis.TimeAxisAuthority", b =>
+            modelBuilder.Entity("TimeLine.Axis.Filters.TimeAxisFilter", b =>
                 {
-                    b.HasOne("TimeLine.Models.Axis.TimeAxis", "TimeAxis")
-                        .WithMany("TimeAxisAuthority")
-                        .HasForeignKey("TimeAxisId");
-
-                    b.HasOne("TimeLine.Authorization.Users.User", "User")
-                        .WithMany("TimeAxisAuthorities")
-                        .HasForeignKey("UserId");
-                });
-
-            modelBuilder.Entity("TimeLine.Models.Axis.TimeAxisFilter", b =>
-                {
-                    b.HasOne("TimeLine.Models.Axis.TimeAxis", "TimeAxis")
+                    b.HasOne("TimeLine.Axis.Lines.TimeAxis", "TimeAxis")
                         .WithMany("Filters")
                         .HasForeignKey("TimeAxisId");
 
@@ -1378,22 +1350,22 @@ namespace TimeLine.Migrations
                         .HasForeignKey("UserId");
                 });
 
-            modelBuilder.Entity("TimeLine.Models.Axis.TimeAxisItem", b =>
+            modelBuilder.Entity("TimeLine.Axis.Lines.TimeAxisAuthority", b =>
                 {
-                    b.HasOne("TimeLine.Models.Axis.TimeAxis", "TimeAxis")
-                        .WithMany("Items")
+                    b.HasOne("TimeLine.Axis.Lines.TimeAxis", "TimeAxis")
+                        .WithMany("TimeAxisAuthority")
                         .HasForeignKey("TimeAxisId");
-                });
-
-            modelBuilder.Entity("TimeLine.Models.Axis.TimeAxisItemAuthority", b =>
-                {
-                    b.HasOne("TimeLine.Models.Axis.TimeAxisItem", "TimeAxisItem")
-                        .WithMany("TimeAxisItemAuthority")
-                        .HasForeignKey("TimeAxisItemId");
 
                     b.HasOne("TimeLine.Authorization.Users.User", "User")
-                        .WithMany("TimeAxisItemAuthorities")
+                        .WithMany("TimeAxisAuthorities")
                         .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("TimeLine.Axis.Lines.TimeAxisItem", b =>
+                {
+                    b.HasOne("TimeLine.Axis.Lines.TimeAxis", "TimeAxis")
+                        .WithMany("Items")
+                        .HasForeignKey("TimeAxisId");
                 });
 
             modelBuilder.Entity("TimeLine.MultiTenancy.Tenant", b =>

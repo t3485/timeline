@@ -42,11 +42,15 @@ namespace TimeLine.Authorization.Users
         #region Auth
         public void AddAuth(TimeAxisAuthority e)
         {
+            if (TimeAxisAuthorities == null)
+                TimeAxisAuthorities = new List<TimeAxisAuthority>();
             TimeAxisAuthorities.Add(e);
         }
 
         public void RemoveAuth(TimeAxisAuthority e)
         {
+            if (TimeAxisAuthorities == null)
+                TimeAxisAuthorities = new List<TimeAxisAuthority>();
             TimeAxisAuthorities.Remove(e);
         }
         #endregion

@@ -1,5 +1,7 @@
 using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 
 namespace TimeLine.EntityFrameworkCore
 {
@@ -7,12 +9,20 @@ namespace TimeLine.EntityFrameworkCore
     {
         public static void Configure(DbContextOptionsBuilder<TimeLineDbContext> builder, string connectionString)
         {
-            builder.UseSqlServer(connectionString);
+            builder.UseLoggerFactory(MyLoggerFactory).UseLazyLoadingProxies().UseSqlServer(connectionString);
         }
 
         public static void Configure(DbContextOptionsBuilder<TimeLineDbContext> builder, DbConnection connection)
         {
-            builder.UseSqlServer(connection);
+            builder.UseLoggerFactory(MyLoggerFactory).UseLazyLoadingProxies().UseSqlServer(connection);
         }
+
+        public static readonly LoggerFactory MyLoggerFactory
+            = new LoggerFactory(new[]
+            {
+                new ConsoleLoggerProvider((category, level)
+                    => category == DbLoggerCategory.Database.Command.Name
+                       && level == LogLevel.Information, true)
+            });
     }
 }

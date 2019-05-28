@@ -15,8 +15,15 @@ namespace TimeLine.Axis.Filters
 
         public DateTime? MinDate { get; private set; }
 
-        public TimeAxis TimeAxis { get; private set; }
+        public virtual TimeAxis TimeAxis { get; private set; }
 
-        public User User { get; private set; }
+        public virtual User User { get; private set; }
+
+        #region Methods
+        public bool HasAnyFilters()
+        {
+            return !(MaxPage == null && MinPage == null && MaxDate == null && MinDate == null);
+        }
+        #endregion
     }
 }

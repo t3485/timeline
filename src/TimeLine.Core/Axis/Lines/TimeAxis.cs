@@ -1,7 +1,10 @@
-﻿using Abp.Domain.Entities.Auditing;
+﻿using Abp;
+using Abp.Domain.Entities;
+using Abp.Domain.Entities.Auditing;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using TimeLine.Axis.Filters;
-using TimeLine.Axis.Items;
 
 namespace TimeLine.Axis.Lines
 {
@@ -11,6 +14,14 @@ namespace TimeLine.Axis.Lines
         public string Title { get; private set; }
 
         public string Describe { get; private set; }
+        /// <summary>
+        /// 是否为开放状态
+        /// </summary>
+        public bool IsPublic { get; private set; }
+        /// <summary>
+        /// 排序类型
+        /// </summary>
+        public ItmesOrderType OrderType { get; set; }
 
         public virtual ICollection<TimeAxisFilter> Filters { get; private set; }
 
@@ -20,7 +31,7 @@ namespace TimeLine.Axis.Lines
         #endregion
 
         #region Ctor
-        private TimeAxis() { }
+        public TimeAxis() { }
         public TimeAxis(string title)
         {
             Title = title;
@@ -40,11 +51,20 @@ namespace TimeLine.Axis.Lines
         {
             TimeAxisAuthority.Remove(e);
         }
+
+        public IEnumerable<AuthorityType> GetAuthorities(long userid)
+        {
+            if (TimeAxisAuthority != null)
+                return TimeAxisAuthority.Where(x => x.User.Id == userid).Select(x => x.AuthorityType);
+            return new List<AuthorityType>();
+        }
         #endregion
 
         #region Item
         public void AddItem(TimeAxisItem e)
         {
+            if (Items.Any(x => x.Descript == e.Descript))
+                throw new AbpException("Descript could not be same");
             Items.Add(e);
         }
 
@@ -52,18 +72,29 @@ namespace TimeLine.Axis.Lines
         {
             Items.Remove(e);
         }
-        #endregion
 
-        #region Filter
-        public void AddFilter(TimeAxisFilter e)
+        public IEnumerable<TimeAxisItem> GetItems()
         {
-            Filters.Add(e);
+            return Items;
         }
 
-        public void RemoveFilter(TimeAxisFilter e)
+        public TimeAxisItem GetItemById(int id)
         {
-            Filters.Remove(e);
+            var item = Items.FirstOrDefault(x => x.Id == id);
+            if (item == null)
+                throw new EntityNotFoundException(typeof(TimeAxisItem), id);
+            return item;
         }
-        #endregion
+
+        public IEnumerable<TimeAxisItem> Order(IEnumerable<TimeAxisItem> itmes)
+        {
+            if (OrderType == ItmesOrderType.Date)
+                return Items.OrderBy(x => x.StartTime);
+            if (OrderType == ItmesOrderType.EndDate)
+                return Items.OrderBy(x => x.EndTime);
+
+            return Items;
+        }
+        #endregion        
     }
 }

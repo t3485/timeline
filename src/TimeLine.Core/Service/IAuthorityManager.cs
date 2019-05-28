@@ -61,5 +61,13 @@ namespace TimeLine.Service
         /// <param name="auth"></param>
         /// <returns></returns>
         TimeAxis AssignTo(User user, TimeAxis line, TimeAxisAuthority auth);
+
+        /// <summary>
+        /// 分配所有权限
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="line"></param>
+        /// <returns></returns>
+        TimeAxis AssignAllTo(User user, TimeAxis line);
     }
 }
