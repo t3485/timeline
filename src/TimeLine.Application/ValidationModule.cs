@@ -9,5 +9,8 @@ namespace TimeLine
     [DependsOn(typeof(AbpFluentValidationModule))]
     public class ValidationModule: AbpModule
     {
+        public override void PreInitialize()
+        {
+        }
     }
 }

@@ -7,8 +7,12 @@ namespace TimeLine.Axis.Dto
 {
     public class AxisDto : EntityDto<int>
     {
-        public string title { get; set; }
+        public string Title { get; set; }
 
-        public string describe { get; set; }
+        public string Describe { get; set; }
+
+        public string Creator { get; set; }
+
+        public DateTime CreationTime { get; set; }
     }
 }

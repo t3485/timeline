@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TimeLine.Authorization.Users;
 using TimeLine.Axis.Filters;
 using TimeLine.Axis.Lines;
 
@@ -14,6 +15,11 @@ namespace TimeLine.Axis.Dto
             CreateMap<CreateAxisDto, TimeAxisAuthority>();
 
             CreateMap<AxisDto, TimeAxis>();
+
+            CreateMap<TimeAxis, AxisDto>();
+            CreateMap<string, AxisDto>()
+                .ForMember(x => x.Creator, opt => opt.MapFrom(y => y));
+
             CreateMap<CreateAxisDto, TimeAxis>();
 
             CreateMap<AuthorityType, string>().ConvertUsing(x => x.ToString());

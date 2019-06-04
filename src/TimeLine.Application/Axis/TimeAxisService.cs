@@ -7,6 +7,7 @@ using AutoMapper;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TimeLine.Authorization.Users;
 using TimeLine.Axis.Dto;
 using TimeLine.Axis.Filters;
 using TimeLine.Axis.Lines;
@@ -17,21 +18,28 @@ namespace TimeLine.Axis
     [AbpAuthorize]
     public class TimeAxisService : TimeLineAppServiceBase, ITimeAxisService
     {
+        #region Fileds
         private readonly IAuthorityManager _authorityManager;
         private readonly ITimeAxisManager _timeAxisManager;
         private readonly IRepository<TimeAxis> _axisRepository;
         private readonly IRepository<TimeAxisFilter> _filterRepository;
+        private readonly UserManager _userManager;
+        #endregion
 
+        #region Ctor
         public TimeAxisService(IAuthorityManager authorityManager,
             ITimeAxisManager timeAxisManager,
+             UserManager userManager,
             IRepository<TimeAxis> axisRepository,
             IRepository<TimeAxisFilter> filterRepository)
         {
             _authorityManager = authorityManager;
             _timeAxisManager = timeAxisManager;
+            _userManager = userManager;
             _axisRepository = axisRepository;
             _filterRepository = filterRepository;
         }
+        #endregion
 
         public AxisDto GetAxis(EntityDto<int> input)
         {
@@ -47,12 +55,20 @@ namespace TimeLine.Axis
         {
             int take = input.MaxResultCount > 50 || input.MaxResultCount <= 0 ? 10 : input.MaxResultCount,
                 skip = input.SkipCount > 0 ? input.SkipCount : 0;
-
-            var result = _timeAxisManager.FilterVisibleTimeAxes(_axisRepository.GetAll())
+            
+            var lines = _timeAxisManager.FilterVisibleTimeAxes(_axisRepository.GetAll())
                                         .OrderByDescending(x => x.CreationTime)
                                         .Skip(skip).Take(take);
 
-            return new ListResultDto<AxisDto>(Mapper.Map<List<AxisDto>>(result));
+            var users = _userManager.Users.Join(lines, x => x.Id, y => y.CreatorUserId,
+                (x, y) => new { item = y, x.Name }).ToList();
+            var result = users.Select(x =>
+            {
+                var data = Mapper.Map<AxisDto>(x.item);
+                return Mapper.Map(x.Name, data);
+            }).ToList();
+
+            return new ListResultDto<AxisDto>(result);
         }
 
         /// <summary>
@@ -162,19 +178,17 @@ namespace TimeLine.Axis
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        [UnitOfWork(IsDisabled = true)]
         public AxisItemDto CreateItem(CreateItemDto input)
         {
             var entity = Mapper.Map<TimeAxisItem>(input);
-            using (var unitOfWork = UnitOfWorkManager.Begin())
-            {
-                var line = _axisRepository.Get(input.AxisId);
+            var line = _axisRepository.Get(input.AxisId);
 
-                if (!_authorityManager.HasAuthority(AbpSession.GetUserId(), line, AuthorityType.AddItem))
-                    Throw403Error();
-                line.AddItem(entity);
-                unitOfWork.Complete();
-            }
+            if (!_authorityManager.HasAuthority(AbpSession.GetUserId(), line, AuthorityType.AddItem))
+                Throw403Error();
+
+            line.AddItem(entity);
+            UnitOfWorkManager.Current.SaveChanges();
+
             return Mapper.Map<AxisItemDto>(entity);
         }
 

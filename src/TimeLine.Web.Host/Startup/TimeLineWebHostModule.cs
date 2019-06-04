@@ -3,6 +3,8 @@ using Microsoft.Extensions.Configuration;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using TimeLine.Configuration;
+using Abp.AspNetCore.Configuration;
+using TimeLine.Users;
 
 namespace TimeLine.Web.Host.Startup
 {
@@ -19,8 +21,14 @@ namespace TimeLine.Web.Host.Startup
             _appConfiguration = env.GetAppConfiguration();
         }
 
+        public override void PreInitialize()
+        {
+            Configuration.IocManager.Resolve<IAbpAspNetCoreConfiguration>().UseMvcDateTimeFormatForAppServices = true;
+        }
+
         public override void Initialize()
         {
+            Configuration.Modules.AbpConfiguration.
             IocManager.RegisterAssemblyByConvention(typeof(TimeLineWebHostModule).GetAssembly());
         }
     }
