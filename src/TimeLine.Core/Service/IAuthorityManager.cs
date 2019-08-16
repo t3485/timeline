@@ -69,5 +69,7 @@ namespace TimeLine.Service
         /// <param name="line"></param>
         /// <returns></returns>
         TimeAxis AssignAllTo(User user, TimeAxis line);
+        
+        TimeAxis AssignNo(User user, TimeAxis line, AuthorityType auth);
     }
 }

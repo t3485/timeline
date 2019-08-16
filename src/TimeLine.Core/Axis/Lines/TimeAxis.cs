@@ -4,6 +4,7 @@ using Abp.Domain.Entities.Auditing;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TimeLine.Authorization.Users;
 using TimeLine.Axis.Filters;
 
 namespace TimeLine.Axis.Lines
@@ -28,6 +29,8 @@ namespace TimeLine.Axis.Lines
         public virtual ICollection<TimeAxisItem> Items { get; private set; }
 
         public virtual ICollection<TimeAxisAuthority> TimeAxisAuthority { get; private set; }
+
+        public virtual User User { get; set; }
         #endregion
 
         #region Ctor
@@ -38,6 +41,7 @@ namespace TimeLine.Axis.Lines
             Filters = new List<TimeAxisFilter>();
             Items = new List<TimeAxisItem>();
             TimeAxisAuthority = new List<TimeAxisAuthority>();
+            User = new User();
         }
         #endregion
 
@@ -50,6 +54,18 @@ namespace TimeLine.Axis.Lines
         public void RemoveAuth(TimeAxisAuthority e)
         {
             TimeAxisAuthority.Remove(e);
+        }
+
+        public void RemoveAuth(AuthorityType e, User user)
+        {
+            var ele = TimeAxisAuthority.FirstOrDefault(x => x.AuthorityType == e && x.User.Id == user.Id);
+            if (ele != null)
+                TimeAxisAuthority.Remove(ele);
+        }
+
+        public void SetAuth(ICollection<TimeAxisAuthority> e)
+        {
+            TimeAxisAuthority = e;
         }
 
         public IEnumerable<AuthorityType> GetAuthorities(long userid)

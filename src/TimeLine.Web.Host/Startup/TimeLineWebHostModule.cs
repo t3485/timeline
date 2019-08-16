@@ -23,6 +23,7 @@ namespace TimeLine.Web.Host.Startup
 
         public override void PreInitialize()
         {
+            Configuration.BackgroundJobs.IsJobExecutionEnabled = false;
             Configuration.IocManager.Resolve<IAbpAspNetCoreConfiguration>().UseMvcDateTimeFormatForAppServices = true;
         }
 

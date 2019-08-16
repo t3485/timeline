@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Abp.Authorization.Users;
 using Abp.Extensions;
 using TimeLine.Axis.Filters;
@@ -14,6 +15,8 @@ namespace TimeLine.Authorization.Users
         public virtual ICollection<TimeAxisAuthority> TimeAxisAuthorities { get; private set; }
 
         public virtual ICollection<TimeAxisFilter> TimeAxisFilters { get; private set; }
+
+        public virtual ICollection<TimeAxis> TimeAxis { get; private set; }
 
         public static string CreateRandomPassword()
         {
@@ -52,6 +55,13 @@ namespace TimeLine.Authorization.Users
             if (TimeAxisAuthorities == null)
                 TimeAxisAuthorities = new List<TimeAxisAuthority>();
             TimeAxisAuthorities.Remove(e);
+        }
+
+        public void RemoveAuth(AuthorityType e)
+        {
+            var ele = TimeAxisAuthorities.FirstOrDefault(x => x.AuthorityType == e && x.User.Id == Id);
+            if (ele != null)
+                TimeAxisAuthorities.Remove(ele);
         }
         #endregion
     }

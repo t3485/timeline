@@ -37,7 +37,7 @@ namespace TimeLine.Service
         public bool HasAuthority(User user, TimeAxis line, params AuthorityType[] types)
         {
             if (user == null)
-                throw new ArgumentNullException();
+                throw new ArgumentNullException(nameof(user));
 
             return HasAuthority(user.Id, line, types);
         }
@@ -45,16 +45,19 @@ namespace TimeLine.Service
         public bool HasAuthority(long id, TimeAxis line, params AuthorityType[] types)
         {
             if (line == null)
-                throw new ArgumentNullException();
+                throw new ArgumentNullException(nameof(line));
             if (types == null || types.Count() == 0)
-                return true;
-            //若为开放状态则不验证查看权限
-            if (types.Count() == 1 && types[0] == AuthorityType.View && line.IsPublic)
                 return true;
 
             var hasAuth = line.GetAuthorities(id);
 
-            return types.Except(hasAuth).Count() == 0;
+            var _t =  types.Except(hasAuth);
+
+            //若为开放状态则不验证查看权限
+            if (line.IsPublic)
+                _t = _t.Where(x => x != AuthorityType.View);
+
+            return _t.Count() == 0;
         }
 
         public TimeAxis AssignTo(User user, TimeAxis line, AuthorityType type)
@@ -78,6 +81,17 @@ namespace TimeLine.Service
             return line;
         }
 
+        public TimeAxis AssignNo(User user, TimeAxis line, AuthorityType auth)
+        {
+            if (user == null || line == null)
+                throw new ArgumentNullException();
+
+            line.RemoveAuth(auth, user);
+            user.RemoveAuth(auth);
+
+            return line;
+        }
+        
         public TimeAxis AssignAllTo(User user, TimeAxis line)
         {
             AssignTo(user, line, AuthorityType.View);
@@ -88,5 +102,6 @@ namespace TimeLine.Service
 
             return line;
         }
+
     }
 }

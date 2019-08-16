@@ -1,0 +1,7 @@
+{
+  "culture": "en",
+  "texts": {
+    "EmptyError": "{0} is empty",
+    "Xtasks": "{0} tasks"
+  }
+}

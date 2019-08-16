@@ -24,13 +24,29 @@ namespace TimeLine.EntityFrameworkCore
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            TimeAxisCreating(modelBuilder);
+            TimeAxisAuthorityCreating(modelBuilder);
 
-            modelBuilder.Entity<TimeAxis>().ToTable(nameof(TimeAxis));
-
-            modelBuilder.Entity<TimeAxisAuthority>().ToTable(nameof(TimeAxisAuthority));
             modelBuilder.Entity<TimeAxisFilter>().ToTable(nameof(TimeAxisFilter));
             modelBuilder.Entity<TimeAxisItem>().ToTable(nameof(TimeAxisItem));
+            
+            base.OnModelCreating(modelBuilder);
+        }
+
+        private void TimeAxisCreating(ModelBuilder modelBuilder)
+        {
+            var builder = modelBuilder.Entity<TimeAxis>().ToTable(nameof(TimeAxis));
+
+            builder.HasOne(x => x.User).WithMany(x => x.TimeAxis)
+                .HasForeignKey(x => x.CreatorUserId);
+            builder.HasMany(x => x.TimeAxisAuthority).WithOne(x => x.TimeAxis).OnDelete(DeleteBehavior.Cascade);
+        }
+
+        private void TimeAxisAuthorityCreating(ModelBuilder modelBuilder)
+        {
+            var builder = modelBuilder.Entity<TimeAxisAuthority>().ToTable(nameof(TimeAxisAuthority));
+
+            builder.HasOne(x => x.User).WithMany(x => x.TimeAxisAuthorities);
         }
     }
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TimeLine.Axis.Lines;
 
 namespace TimeLine.Axis.Dto
 {
@@ -14,5 +15,9 @@ namespace TimeLine.Axis.Dto
         public string Creator { get; set; }
 
         public DateTime CreationTime { get; set; }
+
+        public string Authorities { get; set; }
+
+        public List<string> AuthorityList { get; set; }
     }
 }

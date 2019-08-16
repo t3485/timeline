@@ -16,5 +16,7 @@ namespace TimeLine.Service
         IQueryable<TimeAxis> FilterVisibleTimeAxes(IQueryable<TimeAxis> list);
 
         IEnumerable<TimeAxisItem> FilterTimeAxisItems(TimeAxis line, TimeAxisFilter filter);
+
+        void Test();
     }
 }

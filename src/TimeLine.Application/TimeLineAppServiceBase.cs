@@ -46,8 +46,13 @@ namespace TimeLine
         }
 
         protected virtual void Throw403Error()
-        {
+        {            
             throw new UserFriendlyException("Forbidden");
+        }
+
+        protected virtual void ThrowNoDataError()
+        {
+            throw new UserFriendlyException("No Data");
         }
     }
 }

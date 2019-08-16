@@ -12,10 +12,17 @@ namespace TimeLine.Service
     public class TimeAxisManager : DomainService, ITimeAxisManager
     {
         private readonly IAuthorityManager _authorityManager;
+        private readonly ITestRepository _testRepository;
 
-        public TimeAxisManager(IAuthorityManager authorityManager)
+        public TimeAxisManager(IAuthorityManager authorityManager, ITestRepository testRepository)
         {
             _authorityManager = authorityManager;
+            _testRepository = testRepository;
+        }
+
+        public void Test()
+        {
+            _testRepository.Test();
         }
 
         public TimeAxis CreateTimeAxis(User user, string title)
