@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  timeline.web.host:
+    image: ${DOCKER_REGISTRY-}timelinewebhost
+    build:
+      context: .
+      dockerfile: src/TimeLine.Web.Host/Dockerfile
