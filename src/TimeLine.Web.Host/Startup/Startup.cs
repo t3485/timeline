@@ -33,6 +33,7 @@ namespace TimeLine.Web.Host.Startup
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            Console.WriteLine(_appConfiguration["ConnectionStrings:Default"]);
             // MVC
             services.AddMvc(
                 options => options.Filters.Add(new CorsAuthorizationFilterFactory(_defaultCorsPolicyName))
