@@ -74,6 +74,12 @@ namespace TimeLine.Axis.Lines
                 return TimeAxisAuthority.Where(x => x.User.Id == userid).Select(x => x.AuthorityType);
             return new List<AuthorityType>();
         }
+
+        public TimeAxis SetCreatorUser(User user)
+        {
+            User = user;
+            return this;
+        }
         #endregion
 
         #region Item

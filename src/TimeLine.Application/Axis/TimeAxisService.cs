@@ -84,6 +84,7 @@ namespace TimeLine.Axis
             var entity = Mapper.Map<TimeAxis>(input);
             var user = await GetCurrentUserAsync();
             _authorityManager.AssignAllTo(user, entity);
+            entity.SetCreatorUser(user);
             var id = _axisRepository.InsertAndGetId(entity);
 
             return Mapper.Map<AxisDto>(_axisRepository.Get(id));

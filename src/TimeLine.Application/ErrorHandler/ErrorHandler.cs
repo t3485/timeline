@@ -12,7 +12,7 @@ namespace TimeLine.ErrorHandler
         public void HandleEvent(AbpHandledExceptionData eventData)
         {
             //TODO: Check eventData.Exception!
-        }
+        } 
     }
 
 }

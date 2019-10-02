@@ -9,12 +9,12 @@ namespace TimeLine.EntityFrameworkCore
     {
         public static void Configure(DbContextOptionsBuilder<TimeLineDbContext> builder, string connectionString)
         {
-            builder.UseLoggerFactory(MyLoggerFactory).UseLazyLoadingProxies().UseSqlServer(connectionString);
+            builder.UseLoggerFactory(MyLoggerFactory).UseLazyLoadingProxies().UseMySql(connectionString);
         }
 
         public static void Configure(DbContextOptionsBuilder<TimeLineDbContext> builder, DbConnection connection)
         {
-            builder.UseLoggerFactory(MyLoggerFactory).UseLazyLoadingProxies().UseSqlServer(connection);
+            builder.UseLoggerFactory(MyLoggerFactory).UseLazyLoadingProxies().UseMySql(connection);
         }
 
         public static readonly LoggerFactory MyLoggerFactory
