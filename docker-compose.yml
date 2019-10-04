@@ -6,3 +6,5 @@ services:
     build:
       context: .
       dockerfile: src/TimeLine.Web.Host/Dockerfile
+    ports:
+      - "80":"80"
