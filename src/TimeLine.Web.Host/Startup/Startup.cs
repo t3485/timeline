@@ -17,6 +17,7 @@ using TimeLine.Identity;
 
 using Abp.AspNetCore.SignalR.Hubs;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace TimeLine.Web.Host.Startup
 {
@@ -82,6 +83,7 @@ namespace TimeLine.Web.Host.Startup
             {
                 options.SerializerSettings.DateFormatString = "yyyy-MM-dd";
             });
+            services.AddHttpClient();
 
             // Configure Abp and Dependency Injection
             return services.AddAbp<TimeLineWebHostModule>(

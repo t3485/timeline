@@ -5,6 +5,7 @@ using TimeLine.Authorization.Users;
 using TimeLine.MultiTenancy;
 using TimeLine.Axis.Lines;
 using TimeLine.Axis.Filters;
+using TimeLine.Reports;
 
 namespace TimeLine.EntityFrameworkCore
 {
@@ -16,6 +17,8 @@ namespace TimeLine.EntityFrameworkCore
         public virtual DbSet<TimeAxisAuthority> TimeAxisAuthority { get; set; }
         public virtual DbSet<TimeAxisFilter> TimeAxisFilter { get; set; }
         public virtual DbSet<TimeAxisItem> TimeAxisItem { get; set; }
+
+        public virtual DbSet<TableData> TableDatas { get; set; }
 
         public TimeLineDbContext(DbContextOptions<TimeLineDbContext> options)
             : base(options)
