@@ -29,7 +29,7 @@ namespace TimeLine.Reports
         /// <summary>
         /// 报告日期
         /// </summary>
-        public string REPORTDATE { get; set; }
+        public DateTime REPORTDATE { get; set; }
 
         /// <summary>
         /// 货币资金

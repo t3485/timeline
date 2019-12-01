@@ -19,6 +19,6 @@
     <ProjectReference Include="..\TimeLine.Core\TimeLine.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Reports\Dto\" />
+    <Folder Include="Reports\Comparer\" />
   </ItemGroup>
 </Project>

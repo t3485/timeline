@@ -13,12 +13,6 @@ namespace TimeLine.Reports
 
         public string Json { get; private set; }
 
-        public int MinPage { get; private set; }
-
-        public string Descript { get; private set; }
-
-        public string Content { get; private set; }
-
-        public string ImgPath { get; private set; }
+        public ReportTableType TableType { get; set; }
     }
 }

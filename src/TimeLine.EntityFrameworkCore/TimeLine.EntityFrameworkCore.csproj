@@ -23,6 +23,8 @@
     <Compile Remove="Migrations\20191001111419_Initial_Migration.Designer.cs" />
     <Compile Remove="Migrations\20191002022914_migration.cs" />
     <Compile Remove="Migrations\20191002022914_migration.Designer.cs" />
+    <Compile Remove="Migrations\20191104120121_AddPlan.cs" />
+    <Compile Remove="Migrations\20191104120121_AddPlan.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.2.4" />

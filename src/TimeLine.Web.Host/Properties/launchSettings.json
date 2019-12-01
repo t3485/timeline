@@ -17,7 +17,7 @@
     },
     "TimeLine.Web.Host": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "http://localhost:21021",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
