@@ -37,10 +37,65 @@ namespace TimeLine.Reports
                 var profit = (await _reportManager.GetLRBs(input.Code)).OrderBy(x => x.REPORTDATE);
 
                 result.Date = cash.Select(x => x.REPORTDATE);
-                result.A = cash.Select(x => Convert.ToDecimal(x.NETOPERATECASHFLOW));
-                result.B = profit.Select(x => Convert.ToDecimal(x.NETPROFIT));
-                result.AName = "经营现金流净额";
-                result.BName = "净利润";
+                result.Cart = new List<CartDetailDto>
+                {
+                    new CartDetailDto
+                    {
+                         Data = cash.Select(x => Convert.ToDecimal(x.NETOPERATECASHFLOW)),
+                         Name = "经营现金流净额"
+                    },
+                    new CartDetailDto
+                    {
+                         Data = profit.Select(x => Convert.ToDecimal(x.NETPROFIT)),
+                         Name = "净利润"
+                    }
+                };
+            }
+            else if (input.Type == "2")
+            {
+                var cash = (await _reportManager.GetXJLLBs(input.Code)).OrderBy(x => x.REPORTDATE);
+                var profit = (await _reportManager.GetLRBs(input.Code)).OrderBy(x => x.REPORTDATE);
+
+                result.Date = cash.Select(x => x.REPORTDATE);
+                result.Cart = new List<CartDetailDto>
+                {
+                    new CartDetailDto
+                    {
+                         Data = cash.Select(x => Convert.ToDecimal(x.SALEGOODSSERVICEREC)),
+                         Name = "销售商品、提供劳务收到的现金"
+                    },
+                    new CartDetailDto
+                    {
+                         Data = profit.Select(x => Convert.ToDecimal(x.OPERATEREVE)),
+                         Name = "营业收入"
+                    }
+                };
+            }
+            else if (input.Type == "3")
+            {
+                var cash = (await _reportManager.GetXJLLBs(input.Code)).OrderBy(x => x.REPORTDATE);
+                var bill = (await _reportManager.GetZCFZs(input.Code)).OrderBy(x => x.REPORTDATE);
+                var profit = (await _reportManager.GetLRBs(input.Code)).OrderBy(x => x.REPORTDATE);
+
+                result.Date = cash.Select(x => x.REPORTDATE);
+                result.Cart = new List<CartDetailDto>
+                {
+                    new CartDetailDto
+                    {
+                         Data = bill.Select(x => Convert.ToDecimal(x.MONETARYFUND)),
+                         Name = "现金余额"
+                    },
+                    new CartDetailDto
+                    {
+                         Data = cash.Select(x => Convert.ToDecimal(x.SUMINVFLOWOUT)),
+                         Name = "投资支出"
+                    },
+                    new CartDetailDto
+                    {
+                         Data = cash.Select(x => Convert.ToDecimal(x.SUMINVFLOWOUT)),
+                         Name = "有息负债"
+                    }
+                };
             }
 
             return result;

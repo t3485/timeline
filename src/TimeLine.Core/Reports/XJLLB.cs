@@ -31,7 +31,7 @@ namespace TimeLine.Reports
         /// </summary>
         public string CURRENCY { get; set; }
         /// <summary>
-        /// 
+        /// 销售商品、提供劳务收到的现金
         /// </summary>
         public string SALEGOODSSERVICEREC { get; set; }
         /// <summary>
@@ -187,7 +187,7 @@ namespace TimeLine.Reports
         /// </summary>
         public string OTHERINVPAY { get; set; }
         /// <summary>
-        /// 
+        /// 投资活动现金流出小计
         /// </summary>
         public string SUMINVFLOWOUT { get; set; }
         /// <summary>

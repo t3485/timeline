@@ -141,7 +141,7 @@ namespace TimeLine.Reports
 
         private List<T> DeserialzeList<T>(string s)
         {
-            if (s.Length >= 2 &&s[0] == '\"' && s[1] == '{')
+            if (s.Length >= 2 &&s[0] == '\"' && s[1] == '[')
             {
                 var r1 = JsonConvert.DeserializeObject<TmpData>("{\"data\":" + s + "}");
                 return JsonConvert.DeserializeObject<T[]>(r1.Data).ToList();

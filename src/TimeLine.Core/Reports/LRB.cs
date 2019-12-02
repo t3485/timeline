@@ -27,7 +27,7 @@ namespace TimeLine.Reports
         /// </summary>
         public string TOTALOPERATEREVE { get; set; }
         /// <summary>
-        /// 
+        /// 营业收入
         /// </summary>
         public string OPERATEREVE { get; set; }
         /// <summary>

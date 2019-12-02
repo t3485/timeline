@@ -19316,3 +19316,699 @@ DEBUG 2019-12-01 23:25:35,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       -
 DEBUG 2019-12-01 23:25:35,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.RoleDto
 DEBUG 2019-12-01 23:25:35,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.CreateTenantDto
 DEBUG 2019-12-01 23:25:35,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.TenantDto
+DEBUG 2019-12-02 19:47:37,770 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-02 19:47:37,787 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2019-12-02 19:47:37,801 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.Web.Host.Startup.TimeLineWebHostModule, TimeLine.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,803 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineWebCoreModule, TimeLine.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,803 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineApplicationModule, TimeLine.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,803 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineCoreModule, TimeLine.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,803 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,803 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.6.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.FluentValidation.AbpFluentValidationModule, Abp.FluentValidation, Version=4.6.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.EntityFrameworkCore.TimeLineEntityFrameworkModule, TimeLine.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,805 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,805 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,805 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,805 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,805 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:37,807 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2019-12-02 19:47:37,853 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 19:47:37,853 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 19:47:37,853 [1    ] o.Configuration.LanguageManagementConfig - Converted TimeLine (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 19:47:37,853 [1    ] o.Configuration.LanguageManagementConfig - Converted local (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 19:47:37,853 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 19:47:38,078 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: TimeLine.EntityFrameworkCore.TimeLineDbContext, TimeLine.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 19:47:38,407 [1    ] Abp.Localization.LocalizationManager     - Initializing 5 localization sources.
+DEBUG 2019-12-02 19:47:38,448 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-02 19:47:38,479 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-02 19:47:38,494 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TimeLine
+DEBUG 2019-12-02 19:47:38,604 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: local
+DEBUG 2019-12-02 19:47:38,624 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-02 19:47:38,658 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-12-02 19:47:38,658 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-02 19:47:38,663 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Users.Dto.CreateUserDto
+DEBUG 2019-12-02 19:47:38,664 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Users.Dto.UserDto
+DEBUG 2019-12-02 19:47:38,664 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-02 19:47:38,665 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-02 19:47:38,665 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.CreateRoleDto
+DEBUG 2019-12-02 19:47:38,665 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.PermissionDto
+DEBUG 2019-12-02 19:47:38,665 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.RoleDto
+DEBUG 2019-12-02 19:47:38,665 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-02 19:47:38,665 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.TenantDto
+INFO  2019-12-02 20:47:56,097 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SZ002351&Type=1  
+INFO  2019-12-02 20:47:56,126 [60   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 20:47:57,156 [60   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 20:47:57,167 [60   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 20:47:57,475 [60   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 20:47:58,491 [60   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:47:58,494 [60   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:47:58,904 [4    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 409.058ms - OK
+INFO  2019-12-02 20:47:58,906 [4    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 419.0762ms - OK
+INFO  2019-12-02 20:47:59,034 [4    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:47:59,034 [4    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:47:59,073 [4    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 38.5653ms - OK
+INFO  2019-12-02 20:47:59,073 [4    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 38.7199ms - OK
+INFO  2019-12-02 20:47:59,112 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1635.7899ms.
+INFO  2019-12-02 20:47:59,615 [60   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 20:47:59,690 [60   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 2530.5459ms
+INFO  2019-12-02 20:47:59,706 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3616.0508ms 200 application/json; charset=utf-8
+INFO  2019-12-02 20:50:02,388 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SZ002351&Type=1  
+INFO  2019-12-02 20:50:02,388 [59   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 20:50:02,395 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 20:50:02,395 [59   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 20:50:02,398 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 20:50:02,723 [59   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:50:02,723 [59   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:50:03,148 [4    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 424.9851ms - OK
+INFO  2019-12-02 20:50:03,148 [4    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 425.1113ms - OK
+INFO  2019-12-02 20:50:03,641 [4    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:50:03,641 [4    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:50:03,756 [4    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 115.2919ms - OK
+INFO  2019-12-02 20:50:03,756 [4    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 115.4221ms - OK
+INFO  2019-12-02 20:50:03,757 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1358.67ms.
+INFO  2019-12-02 20:50:03,886 [59   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 20:50:03,886 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 1491.4775ms
+INFO  2019-12-02 20:50:03,886 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1498.3388ms 200 application/json; charset=utf-8
+INFO  2019-12-02 20:52:39,767 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SZ002351&Type=1  
+INFO  2019-12-02 20:52:39,767 [45   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 20:52:39,771 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 20:52:39,771 [45   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 20:52:39,774 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 20:52:39,920 [45   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:52:39,920 [45   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:52:40,057 [46   ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 136.4448ms - OK
+INFO  2019-12-02 20:52:40,057 [46   ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 136.583ms - OK
+INFO  2019-12-02 20:52:40,060 [46   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:52:40,060 [46   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:52:40,095 [46   ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 34.2884ms - OK
+INFO  2019-12-02 20:52:40,095 [46   ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 34.5013ms - OK
+INFO  2019-12-02 20:52:40,096 [46   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 321.3163ms.
+INFO  2019-12-02 20:52:40,112 [44   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 20:52:40,113 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 341.4985ms
+INFO  2019-12-02 20:52:40,113 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 345.9402ms 200 application/json; charset=utf-8
+INFO  2019-12-02 20:54:56,296 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SZ002351&Type=1  
+INFO  2019-12-02 20:54:56,296 [38   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 20:54:56,299 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 20:54:56,299 [38   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 20:54:56,302 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 20:54:56,425 [38   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:54:56,425 [38   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:54:56,515 [32   ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 89.8795ms - OK
+INFO  2019-12-02 20:54:56,515 [32   ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 90.0648ms - OK
+INFO  2019-12-02 20:54:56,519 [32   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:54:56,519 [32   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2006/12/31&code=SZ002351
+INFO  2019-12-02 20:54:56,571 [32   ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 51.7453ms - OK
+INFO  2019-12-02 20:54:56,571 [32   ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 51.9684ms - OK
+INFO  2019-12-02 20:54:56,572 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 270.3616ms.
+INFO  2019-12-02 20:54:56,589 [36   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 20:54:56,589 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 289.6558ms
+INFO  2019-12-02 20:54:56,589 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 293.278ms 200 application/json; charset=utf-8
+INFO  2019-12-02 22:08:30,014 [58   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SZ600519&Type=1  
+INFO  2019-12-02 22:08:30,015 [58   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:08:30,031 [58   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:08:30,031 [58   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:08:30,040 [58   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:08:31,035 [58   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SZ600519
+INFO  2019-12-02 22:08:31,035 [58   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SZ600519
+INFO  2019-12-02 22:08:38,751 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 22:08:38,751 [59   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:08:38,755 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:08:38,755 [59   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:08:38,761 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:08:38,771 [59   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:08:38,771 [59   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+ERROR 2019-12-02 22:08:42,478 [60   ] Mvc.ExceptionHandling.AbpExceptionFilter - 不知道这样的主机。
+System.Net.Http.HttpRequestException: 不知道这样的主机。 ---> System.Net.Sockets.SocketException: 不知道这样的主机。
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at TimeLine.Reports.CommonRequestsService.GetCash(String code, DateTime endTime) in D:\Project\git\TimeLine\src\TimeLine.Application\Reports\CommonRequestsService.cs:line 110
+   at TimeLine.Service.ReportManager.GetXJLLBs(String code) in D:\Project\git\TimeLine\src\TimeLine.Core\Service\ReportManager.cs:line 127
+   at TimeLine.Reports.ReportService.GetCart(CartSearchDto input) in D:\Project\git\TimeLine\src\TimeLine.Application\Reports\ReportService.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ERROR 2019-12-02 22:08:42,478 [59   ] Mvc.ExceptionHandling.AbpExceptionFilter - 不知道这样的主机。
+System.Net.Http.HttpRequestException: 不知道这样的主机。 ---> System.Net.Sockets.SocketException: 不知道这样的主机。
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at TimeLine.Reports.CommonRequestsService.GetCash(String code, DateTime endTime) in D:\Project\git\TimeLine\src\TimeLine.Application\Reports\CommonRequestsService.cs:line 110
+   at TimeLine.Service.ReportManager.GetXJLLBs(String code) in D:\Project\git\TimeLine\src\TimeLine.Core\Service\ReportManager.cs:line 127
+   at TimeLine.Reports.ReportService.GetCart(CartSearchDto input) in D:\Project\git\TimeLine\src\TimeLine.Application\Reports\ReportService.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-12-02 22:08:42,655 [59   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:08:42,655 [60   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:08:42,658 [60   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 3902.6515ms
+INFO  2019-12-02 22:08:42,658 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 12626.961ms
+INFO  2019-12-02 22:08:42,658 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12643.629ms 500 application/json; charset=utf-8
+INFO  2019-12-02 22:08:42,658 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3907.4311ms 500 application/json; charset=utf-8
+INFO  2019-12-02 22:08:49,504 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 22:08:49,504 [59   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:08:49,508 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:08:49,508 [59   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:08:49,511 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:08:49,514 [59   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,514 [59   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,612 [55   ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 98.3297ms - OK
+INFO  2019-12-02 22:08:49,612 [55   ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 98.7275ms - OK
+INFO  2019-12-02 22:08:49,614 [55   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,614 [55   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,658 [55   ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 43.4102ms - OK
+INFO  2019-12-02 22:08:49,658 [55   ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 43.6079ms - OK
+INFO  2019-12-02 22:08:49,661 [55   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,661 [55   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,715 [55   ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 54.0715ms - OK
+INFO  2019-12-02 22:08:49,715 [55   ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 54.3728ms - OK
+INFO  2019-12-02 22:08:49,722 [55   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,722 [55   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,771 [55   ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 49.4164ms - OK
+INFO  2019-12-02 22:08:49,771 [55   ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 49.5422ms - OK
+INFO  2019-12-02 22:08:49,774 [55   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,774 [55   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,818 [55   ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 44.215ms - OK
+INFO  2019-12-02 22:08:49,818 [55   ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 44.4457ms - OK
+INFO  2019-12-02 22:08:49,821 [25   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,821 [25   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 22:08:49,864 [25   ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 43.163ms - OK
+INFO  2019-12-02 22:08:49,864 [25   ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 43.3537ms - OK
+INFO  2019-12-02 22:08:49,870 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 358.5402ms.
+INFO  2019-12-02 22:08:49,873 [59   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:08:49,873 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 365.45ms
+INFO  2019-12-02 22:08:49,874 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 369.7931ms 200 application/json; charset=utf-8
+DEBUG 2019-12-02 22:10:09,067 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-02 22:10:09,269 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2019-12-02 22:10:09,284 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.Web.Host.Startup.TimeLineWebHostModule, TimeLine.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,286 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineWebCoreModule, TimeLine.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,286 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineApplicationModule, TimeLine.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,287 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineCoreModule, TimeLine.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,287 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,287 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,287 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.6.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.FluentValidation.AbpFluentValidationModule, Abp.FluentValidation, Version=4.6.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.EntityFrameworkCore.TimeLineEntityFrameworkModule, TimeLine.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:09,292 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2019-12-02 22:10:09,686 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 22:10:09,686 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 22:10:09,686 [1    ] o.Configuration.LanguageManagementConfig - Converted TimeLine (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 22:10:09,686 [1    ] o.Configuration.LanguageManagementConfig - Converted local (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 22:10:09,686 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 22:10:10,176 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: TimeLine.EntityFrameworkCore.TimeLineDbContext, TimeLine.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:10:10,971 [1    ] Abp.Localization.LocalizationManager     - Initializing 5 localization sources.
+DEBUG 2019-12-02 22:10:11,027 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-02 22:10:11,061 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-02 22:10:11,079 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TimeLine
+DEBUG 2019-12-02 22:10:11,196 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: local
+DEBUG 2019-12-02 22:10:11,221 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-02 22:10:11,275 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-12-02 22:10:11,275 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-02 22:10:11,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Users.Dto.CreateUserDto
+DEBUG 2019-12-02 22:10:11,291 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Users.Dto.UserDto
+DEBUG 2019-12-02 22:10:11,291 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-02 22:10:11,291 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-02 22:10:11,291 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.CreateRoleDto
+DEBUG 2019-12-02 22:10:11,292 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.PermissionDto
+DEBUG 2019-12-02 22:10:11,292 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.RoleDto
+DEBUG 2019-12-02 22:10:11,292 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-02 22:10:11,292 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.TenantDto
+INFO  2019-12-02 22:10:20,122 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 22:10:20,167 [12   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:10:23,493 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:10:23,506 [12   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:10:24,348 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:10:27,110 [12   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:10:27,115 [12   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:10:27,275 [5    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 159.0332ms - OK
+INFO  2019-12-02 22:10:27,278 [5    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 171.9345ms - OK
+INFO  2019-12-02 22:10:27,289 [5    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 22:10:27,291 [5    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 22:10:27,337 [5    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 45.1808ms - OK
+INFO  2019-12-02 22:10:27,339 [5    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 50.2764ms - OK
+INFO  2019-12-02 22:10:27,340 [5    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 22:10:27,342 [5    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 22:10:27,374 [5    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 30.9186ms - OK
+INFO  2019-12-02 22:10:27,375 [5    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 34.8639ms - OK
+INFO  2019-12-02 22:10:44,262 [5    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:10:44,263 [5    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:10:44,303 [5    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 38.9173ms - OK
+INFO  2019-12-02 22:10:44,304 [5    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 42.8137ms - OK
+INFO  2019-12-02 22:10:50,782 [5    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:10:50,783 [5    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:10:50,824 [5    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 39.9955ms - OK
+INFO  2019-12-02 22:10:50,826 [5    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 44.0826ms - OK
+DEBUG 2019-12-02 22:11:26,620 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-02 22:11:26,689 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2019-12-02 22:11:26,704 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.Web.Host.Startup.TimeLineWebHostModule, TimeLine.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineWebCoreModule, TimeLine.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineApplicationModule, TimeLine.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineCoreModule, TimeLine.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.6.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.FluentValidation.AbpFluentValidationModule, Abp.FluentValidation, Version=4.6.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.EntityFrameworkCore.TimeLineEntityFrameworkModule, TimeLine.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,708 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,708 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,708 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,708 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,708 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,708 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:26,711 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2019-12-02 22:11:26,876 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 22:11:26,876 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 22:11:26,876 [1    ] o.Configuration.LanguageManagementConfig - Converted TimeLine (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 22:11:26,876 [1    ] o.Configuration.LanguageManagementConfig - Converted local (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 22:11:26,876 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 22:11:27,145 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: TimeLine.EntityFrameworkCore.TimeLineDbContext, TimeLine.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 22:11:27,880 [1    ] Abp.Localization.LocalizationManager     - Initializing 5 localization sources.
+DEBUG 2019-12-02 22:11:27,926 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-02 22:11:27,960 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-02 22:11:27,977 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TimeLine
+DEBUG 2019-12-02 22:11:28,089 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: local
+DEBUG 2019-12-02 22:11:28,111 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-02 22:11:28,149 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-12-02 22:11:28,149 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-02 22:11:28,154 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Users.Dto.CreateUserDto
+DEBUG 2019-12-02 22:11:28,155 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Users.Dto.UserDto
+DEBUG 2019-12-02 22:11:28,155 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-02 22:11:28,155 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-02 22:11:28,155 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.CreateRoleDto
+DEBUG 2019-12-02 22:11:28,155 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.PermissionDto
+DEBUG 2019-12-02 22:11:28,155 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.RoleDto
+DEBUG 2019-12-02 22:11:28,156 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-02 22:11:28,156 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.TenantDto
+INFO  2019-12-02 22:12:58,163 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 22:12:58,197 [10   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:13:01,349 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:13:01,361 [10   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:13:02,123 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:13:02,423 [10   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:13:02,428 [10   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:13:02,655 [4    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 225.8772ms - OK
+INFO  2019-12-02 22:13:02,657 [4    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 239.0692ms - OK
+INFO  2019-12-02 22:13:02,714 [4    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 22:13:02,716 [4    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 22:13:02,759 [4    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 42.2137ms - OK
+INFO  2019-12-02 22:13:02,760 [4    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 46.3364ms - OK
+INFO  2019-12-02 22:13:02,763 [4    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 22:13:02,764 [4    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/xjllbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 22:13:02,803 [4    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 38.5013ms - OK
+INFO  2019-12-02 22:13:02,805 [4    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 41.7333ms - OK
+INFO  2019-12-02 22:13:02,901 [4    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:13:02,902 [4    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 22:13:02,938 [4    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 35.0559ms - OK
+INFO  2019-12-02 22:13:02,940 [4    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 38.9635ms - OK
+INFO  2019-12-02 22:13:02,974 [4    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 22:13:02,976 [4    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 22:13:03,017 [4    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 40.3613ms - OK
+INFO  2019-12-02 22:13:03,019 [4    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 44.3222ms - OK
+INFO  2019-12-02 22:13:03,021 [4    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 22:13:03,022 [4    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/lrbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 22:13:03,058 [4    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 35.0777ms - OK
+INFO  2019-12-02 22:13:03,060 [4    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 38.4955ms - OK
+INFO  2019-12-02 22:13:03,095 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 968.0533ms.
+INFO  2019-12-02 22:13:03,844 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:13:03,922 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 2568.8468ms
+INFO  2019-12-02 22:13:03,955 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5800.4849ms 200 application/json; charset=utf-8
+INFO  2019-12-02 22:22:49,552 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 22:22:49,555 [36   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:22:49,563 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:22:49,565 [36   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:22:49,573 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:22:49,998 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 423.2327ms.
+INFO  2019-12-02 22:22:50,039 [39   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:22:50,042 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 477.1757ms
+INFO  2019-12-02 22:22:50,045 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 492.7384ms 200 application/json; charset=utf-8
+INFO  2019-12-02 22:23:44,895 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 22:23:44,896 [40   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:23:44,902 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:23:44,905 [40   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:23:44,908 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:23:45,083 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 173.3759ms.
+INFO  2019-12-02 22:23:45,120 [37   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:23:45,128 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 217.7265ms
+INFO  2019-12-02 22:23:45,136 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 236.2052ms 200 application/json; charset=utf-8
+INFO  2019-12-02 22:24:38,180 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 22:24:38,215 [37   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:24:38,220 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:24:38,223 [37   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:24:38,229 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:24:38,397 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 164.4928ms.
+INFO  2019-12-02 22:24:38,444 [37   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:24:38,449 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 223.9296ms
+INFO  2019-12-02 22:24:38,459 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 276.5945ms 200 application/json; charset=utf-8
+INFO  2019-12-02 22:25:08,891 [49   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 22:25:08,893 [49   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:25:08,902 [49   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:25:08,922 [49   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:25:08,927 [49   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:25:08,940 [49   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 9.7271ms.
+INFO  2019-12-02 22:25:08,951 [44   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:25:08,955 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 49.375ms
+INFO  2019-12-02 22:25:08,963 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 69.9804ms 200 application/json; charset=utf-8
+INFO  2019-12-02 22:27:25,339 [50   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 22:27:25,350 [50   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:27:25,356 [50   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:27:25,377 [50   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:27:25,383 [50   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:27:25,409 [50   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 24.0279ms.
+INFO  2019-12-02 22:27:25,421 [50   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:27:25,423 [50   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 65.4515ms
+INFO  2019-12-02 22:27:25,429 [50   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 87.2141ms 200 application/json; charset=utf-8
+INFO  2019-12-02 22:27:59,233 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=2  
+INFO  2019-12-02 22:27:59,236 [54   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:27:59,241 [54   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:27:59,243 [54   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:27:59,250 [54   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:27:59,272 [54   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 19.9662ms.
+INFO  2019-12-02 22:27:59,291 [54   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:27:59,295 [54   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 50.6395ms
+INFO  2019-12-02 22:27:59,302 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 68.0897ms 200 application/json; charset=utf-8
+INFO  2019-12-02 22:28:03,425 [52   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 22:28:03,428 [52   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:28:03,434 [52   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:28:03,436 [52   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:28:03,440 [52   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:28:03,450 [52   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 7.8471ms.
+INFO  2019-12-02 22:28:03,457 [55   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:28:03,464 [55   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 23.9266ms
+INFO  2019-12-02 22:28:03,466 [55   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.4577ms 200 application/json; charset=utf-8
+INFO  2019-12-02 22:28:04,845 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=2  
+INFO  2019-12-02 22:28:04,847 [57   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:28:04,852 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 22:28:04,854 [57   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 22:28:04,859 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 22:28:04,869 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 7.8653ms.
+INFO  2019-12-02 22:28:04,880 [54   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 22:28:04,882 [54   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 27.7666ms
+INFO  2019-12-02 22:28:04,884 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.383ms 200 application/json; charset=utf-8
+DEBUG 2019-12-02 23:10:38,530 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-02 23:10:38,547 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2019-12-02 23:10:38,561 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.Web.Host.Startup.TimeLineWebHostModule, TimeLine.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,563 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineWebCoreModule, TimeLine.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,563 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineApplicationModule, TimeLine.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineCoreModule, TimeLine.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.6.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.FluentValidation.AbpFluentValidationModule, Abp.FluentValidation, Version=4.6.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.EntityFrameworkCore.TimeLineEntityFrameworkModule, TimeLine.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,566 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,566 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:38,568 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2019-12-02 23:10:38,616 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 23:10:38,616 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 23:10:38,616 [1    ] o.Configuration.LanguageManagementConfig - Converted TimeLine (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 23:10:38,616 [1    ] o.Configuration.LanguageManagementConfig - Converted local (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 23:10:38,616 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 23:10:38,887 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: TimeLine.EntityFrameworkCore.TimeLineDbContext, TimeLine.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:10:39,330 [1    ] Abp.Localization.LocalizationManager     - Initializing 5 localization sources.
+DEBUG 2019-12-02 23:10:39,394 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-02 23:10:39,435 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-02 23:10:39,454 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TimeLine
+DEBUG 2019-12-02 23:10:39,583 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: local
+DEBUG 2019-12-02 23:10:39,607 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-02 23:10:39,652 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-12-02 23:10:39,652 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-02 23:10:39,661 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Users.Dto.CreateUserDto
+DEBUG 2019-12-02 23:10:39,662 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Users.Dto.UserDto
+DEBUG 2019-12-02 23:10:39,663 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-02 23:10:39,663 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-02 23:10:39,663 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.CreateRoleDto
+DEBUG 2019-12-02 23:10:39,663 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.PermissionDto
+DEBUG 2019-12-02 23:10:39,663 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.RoleDto
+DEBUG 2019-12-02 23:10:39,664 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-02 23:10:39,664 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.TenantDto
+INFO  2019-12-02 23:10:48,908 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:10:48,940 [7    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:10:50,122 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:10:50,133 [7    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:10:50,453 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:10:50,710 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 255.3652ms.
+INFO  2019-12-02 23:10:50,940 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:10:51,010 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 885.4093ms
+INFO  2019-12-02 23:10:51,028 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2126.1408ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:11:09,663 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:11:09,663 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:11:09,668 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:11:09,668 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:11:09,671 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:11:09,678 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 6.9604ms.
+INFO  2019-12-02 23:11:09,689 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:11:09,690 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 22.1262ms
+INFO  2019-12-02 23:11:09,690 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 27.415ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:11:14,742 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:11:14,742 [15   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:11:14,748 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:11:14,749 [15   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:11:14,754 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:11:14,766 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 11.6644ms.
+INFO  2019-12-02 23:11:14,774 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:11:14,774 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 25.4808ms
+INFO  2019-12-02 23:11:14,774 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 31.9679ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:12:11,846 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:12:11,847 [14   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:12:11,850 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:12:11,851 [14   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:12:11,853 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:12:12,021 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 168.5537ms.
+INFO  2019-12-02 23:12:12,050 [17   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:12:12,051 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 200.0821ms
+INFO  2019-12-02 23:12:12,051 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 204.6194ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:12:31,743 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:12:31,743 [21   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:12:31,749 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:12:31,749 [21   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:12:31,752 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:12:31,765 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 12.9217ms.
+INFO  2019-12-02 23:12:31,788 [21   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:12:31,788 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 39.0542ms
+INFO  2019-12-02 23:12:31,788 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 45.2484ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:13:06,864 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:13:06,864 [21   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:13:06,870 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:13:06,870 [21   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:13:06,886 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:13:06,909 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 23.1479ms.
+INFO  2019-12-02 23:13:06,920 [22   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:13:06,920 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 50.8759ms
+INFO  2019-12-02 23:13:06,921 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 57.0426ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:13:34,262 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:13:34,262 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:13:34,265 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:13:34,265 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:13:34,270 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:13:34,280 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 10.4337ms.
+INFO  2019-12-02 23:13:34,296 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:13:34,297 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 31.615ms
+INFO  2019-12-02 23:13:34,297 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.8119ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:14:32,030 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:14:32,030 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:14:32,033 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:14:32,033 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:14:32,036 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:14:32,047 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 10.7657ms.
+INFO  2019-12-02 23:14:32,065 [22   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:14:32,065 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 32.2897ms
+INFO  2019-12-02 23:14:32,065 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.7017ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:15:15,590 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:15:15,590 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:15:15,594 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:15:15,595 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:15:15,599 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:15:15,622 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 22.5248ms.
+INFO  2019-12-02 23:15:15,674 [22   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:15:15,674 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 79.8408ms
+INFO  2019-12-02 23:15:15,674 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 84.8612ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:15:24,201 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:15:24,201 [30   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:15:24,218 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:15:24,218 [30   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:15:24,223 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:15:24,252 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 28.7248ms.
+INFO  2019-12-02 23:15:24,259 [30   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:15:24,259 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 41.031ms
+INFO  2019-12-02 23:15:24,259 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 58.4479ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:15:51,674 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:15:51,674 [30   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:15:51,678 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:15:51,678 [30   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:15:51,683 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:15:51,698 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 14.7084ms.
+INFO  2019-12-02 23:15:51,710 [35   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:15:51,710 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 31.9497ms
+INFO  2019-12-02 23:15:51,710 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.2822ms 200 application/json; charset=utf-8
+DEBUG 2019-12-02 23:16:44,261 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-02 23:16:44,279 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2019-12-02 23:16:44,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.Web.Host.Startup.TimeLineWebHostModule, TimeLine.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,294 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineWebCoreModule, TimeLine.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,294 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineApplicationModule, TimeLine.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,295 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.TimeLineCoreModule, TimeLine.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,295 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,295 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,295 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.6.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.FluentValidation.AbpFluentValidationModule, Abp.FluentValidation, Version=4.6.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TimeLine.EntityFrameworkCore.TimeLineEntityFrameworkModule, TimeLine.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,297 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,297 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,300 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2019-12-02 23:16:44,347 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 23:16:44,347 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 23:16:44,347 [1    ] o.Configuration.LanguageManagementConfig - Converted TimeLine (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 23:16:44,347 [1    ] o.Configuration.LanguageManagementConfig - Converted local (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 23:16:44,347 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-02 23:16:44,576 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: TimeLine.EntityFrameworkCore.TimeLineDbContext, TimeLine.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-02 23:16:44,903 [1    ] Abp.Localization.LocalizationManager     - Initializing 5 localization sources.
+DEBUG 2019-12-02 23:16:44,949 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-02 23:16:44,984 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-02 23:16:45,003 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TimeLine
+DEBUG 2019-12-02 23:16:45,110 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: local
+DEBUG 2019-12-02 23:16:45,137 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-02 23:16:45,175 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-12-02 23:16:45,175 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-02 23:16:45,180 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Users.Dto.CreateUserDto
+DEBUG 2019-12-02 23:16:45,181 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Users.Dto.UserDto
+DEBUG 2019-12-02 23:16:45,181 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-02 23:16:45,181 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-02 23:16:45,181 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.CreateRoleDto
+DEBUG 2019-12-02 23:16:45,181 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.PermissionDto
+DEBUG 2019-12-02 23:16:45,181 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.Roles.Dto.RoleDto
+DEBUG 2019-12-02 23:16:45,182 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-02 23:16:45,182 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TimeLine.MultiTenancy.Dto.TenantDto
+INFO  2019-12-02 23:16:51,825 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:16:51,853 [7    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:16:52,922 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:16:52,932 [7    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:16:53,240 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:16:53,520 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 278.6829ms.
+INFO  2019-12-02 23:16:53,822 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:16:53,894 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 968.3035ms
+INFO  2019-12-02 23:16:53,918 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2098.3146ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:16:58,309 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=2  
+INFO  2019-12-02 23:16:58,309 [7    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:16:58,314 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:16:58,315 [7    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:16:58,318 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:16:58,330 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 12.3844ms.
+INFO  2019-12-02 23:16:58,338 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:16:58,340 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 25.1048ms
+INFO  2019-12-02 23:16:58,340 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 31.327ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:17:11,733 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:17:11,733 [14   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:17:11,736 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:17:11,736 [14   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:17:11,739 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:17:12,371 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 632.5588ms.
+INFO  2019-12-02 23:17:12,428 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:17:12,428 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 692.2992ms
+INFO  2019-12-02 23:17:12,428 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 695.9312ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:17:14,208 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=3  
+INFO  2019-12-02 23:17:14,208 [13   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:17:14,215 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:17:14,215 [13   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:17:14,219 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:17:14,636 [13   ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/zcfzbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 23:17:14,639 [13   ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/zcfzbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2019/12/31&code=SH600519
+INFO  2019-12-02 23:17:14,768 [5    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 128.2243ms - OK
+INFO  2019-12-02 23:17:14,770 [5    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 136.0683ms - OK
+INFO  2019-12-02 23:17:14,860 [5    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/zcfzbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 23:17:14,860 [5    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/zcfzbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2013/12/31&code=SH600519
+INFO  2019-12-02 23:17:14,922 [5    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 61.8528ms - OK
+INFO  2019-12-02 23:17:14,922 [5    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 62.0141ms - OK
+INFO  2019-12-02 23:17:14,929 [4    ] t.Http.HttpClient.Default.LogicalHandler - Start processing HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/zcfzbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 23:17:14,929 [4    ] et.Http.HttpClient.Default.ClientHandler - Sending HTTP request GET http://f10.eastmoney.com/NewFinanceAnalysis/zcfzbAjax?companyType=4&reportDateType=1&reportType=1&endDate=2007/12/31&code=SH600519
+INFO  2019-12-02 23:17:14,981 [4    ] et.Http.HttpClient.Default.ClientHandler - Received HTTP response after 51.511ms - OK
+INFO  2019-12-02 23:17:14,981 [4    ] t.Http.HttpClient.Default.LogicalHandler - End processing HTTP request after 51.6541ms - OK
+INFO  2019-12-02 23:17:15,051 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 832.4396ms.
+INFO  2019-12-02 23:17:15,389 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:17:15,392 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 1177.2225ms
+INFO  2019-12-02 23:17:15,392 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1184.3901ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:21:33,591 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=2  
+INFO  2019-12-02 23:21:33,591 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:21:33,602 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:21:33,603 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:21:33,605 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:21:33,808 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 202.6047ms.
+INFO  2019-12-02 23:21:33,880 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:21:33,880 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 277.8038ms
+INFO  2019-12-02 23:21:33,880 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 289.1189ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:21:37,118 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:21:37,118 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:21:37,122 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:21:37,122 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:21:37,124 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:21:37,137 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 12.6346ms.
+INFO  2019-12-02 23:21:37,153 [28   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:21:37,154 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 31.7724ms
+INFO  2019-12-02 23:21:37,154 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.7062ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:21:39,286 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=2  
+INFO  2019-12-02 23:21:39,286 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:21:39,289 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:21:39,289 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:21:39,293 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:21:39,409 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 116.0346ms.
+INFO  2019-12-02 23:21:39,415 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:21:39,415 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 125.7043ms
+INFO  2019-12-02 23:21:39,415 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 129.1732ms 200 application/json; charset=utf-8
+INFO  2019-12-02 23:43:09,571 [65   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/ReportService/GetCart?Code=SH600519&Type=1  
+INFO  2019-12-02 23:43:09,571 [65   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:43:09,578 [65   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCart", controller = "ReportService"}. Executing action TimeLine.Reports.ReportService.GetCart (TimeLine.Application)
+INFO  2019-12-02 23:43:09,578 [65   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-12-02 23:43:09,581 [65   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application) with arguments (TimeLine.Reports.Dto.CartSearchDto) - Validation state: Valid
+INFO  2019-12-02 23:43:10,242 [65   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TimeLine.Reports.ReportService.GetCart (TimeLine.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 660.913ms.
+INFO  2019-12-02 23:43:10,337 [65   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-02 23:43:10,337 [65   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TimeLine.Reports.ReportService.GetCart (TimeLine.Application) in 759.7009ms
+INFO  2019-12-02 23:43:10,337 [65   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 766.5521ms 200 application/json; charset=utf-8

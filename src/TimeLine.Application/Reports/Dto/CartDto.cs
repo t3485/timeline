@@ -8,12 +8,14 @@ namespace TimeLine.Reports.Dto
     {
         public IEnumerable<DateTime> Date { get; set; }
 
-        public IEnumerable<decimal> A { get; set; }
+        public IEnumerable<CartDetailDto> Cart { get; set; }
+    }
 
-        public IEnumerable<decimal> B { get; set; }
+    public class CartDetailDto
+    {
 
-        public string AName { get; set; }
+        public IEnumerable<decimal> Data { get; set; }
 
-        public string BName { get; set; }
+        public string Name { get; set; }
     }
 }
