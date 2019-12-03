@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace TimeLine.Reports
@@ -29,6 +30,7 @@ namespace TimeLine.Reports
         /// <summary>
         /// 营业收入
         /// </summary>
+        [Display(Name = "营业收入")]
         public string OPERATEREVE { get; set; }
         /// <summary>
         /// 
@@ -157,6 +159,7 @@ namespace TimeLine.Reports
         /// <summary>
         /// 净利润
         /// </summary>
+        [Display(Name = "净利润")]
         public string NETPROFIT { get; set; }
         /// <summary>
         /// 

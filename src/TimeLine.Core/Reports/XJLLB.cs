@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace TimeLine.Reports
@@ -133,6 +134,7 @@ namespace TimeLine.Reports
         /// <summary>
         /// 经营活动产生的现金流量净额
         /// </summary>
+        [Display(Name = "经营现金流净额")]
         public string NETOPERATECASHFLOW { get; set; }
         /// <summary>
         /// 
