@@ -34,6 +34,7 @@ namespace TimeLine.Reports
         /// <summary>
         /// 销售商品、提供劳务收到的现金
         /// </summary>
+        [Display(Name = "销售商品、提供劳务收到的现金")]
         public string SALEGOODSSERVICEREC { get; set; }
         /// <summary>
         /// 
@@ -92,8 +93,9 @@ namespace TimeLine.Reports
         /// </summary>
         public string SUMOPERATEFLOWIN { get; set; }
         /// <summary>
-        /// 
+        /// 购买商品、接受劳务支付的现金
         /// </summary>
+        [Display(Name = "购买商品、接受劳务支付的现金")]
         public string BUYGOODSSERVICEPAY { get; set; }
         /// <summary>
         /// 
@@ -145,8 +147,9 @@ namespace TimeLine.Reports
         /// </summary>
         public string INVINCOMEREC { get; set; }
         /// <summary>
-        /// 
+        /// 处置固定资产、无形资产和其他长期资产收回的现金净额
         /// </summary>
+        [Display(Name = "处置固定资产、无形资产和其他长期资产收回的现金净额")]
         public string DISPFILASSETREC { get; set; }
         /// <summary>
         /// 
@@ -160,14 +163,19 @@ namespace TimeLine.Reports
         /// 
         /// </summary>
         public string OTHERINVREC { get; set; }
+
         /// <summary>
-        /// 
+        /// 投资活动现金流入小计
         /// </summary>
+        [Display(Name = "投资活动现金流入小计")]
         public string SUMINVFLOWIN { get; set; }
+
         /// <summary>
-        /// 
+        /// 购建固定资产、无形资产和其他长期资产支付的现金
         /// </summary>
+        [Display(Name = "购建固定资产、无形资产和其他长期资产支付的现金")]
         public string BUYFILASSETPAY { get; set; }
+
         /// <summary>
         /// 
         /// </summary>
@@ -191,10 +199,12 @@ namespace TimeLine.Reports
         /// <summary>
         /// 投资活动现金流出小计
         /// </summary>
+        [Display(Name = "投资活动现金流出小计")]
         public string SUMINVFLOWOUT { get; set; }
         /// <summary>
-        /// 
+        /// 投资活动产生的现金流量净额
         /// </summary>
+        [Display(Name = "投资活动现金流量净额")]
         public string NETINVCASHFLOW { get; set; }
         /// <summary>
         /// 
@@ -248,17 +258,22 @@ namespace TimeLine.Reports
         /// 
         /// </summary>
         public string SUMFINAFLOWOUT { get; set; }
+
         /// <summary>
-        /// 
+        /// 筹资活动产生的现金流量净额
         /// </summary>
+        [Display(Name = "筹资活动现金流量净额")]
         public string NETFINACASHFLOW { get; set; }
+
         /// <summary>
         /// 
         /// </summary>
         public string EFFECTEXCHANGERATE { get; set; }
+
         /// <summary>
-        /// 
+        /// 现金及现金等价物净增加额
         /// </summary>
+        [Display(Name = "现金及现金等价物净增加额")]
         public string NICASHEQUI { get; set; }
         /// <summary>
         /// 

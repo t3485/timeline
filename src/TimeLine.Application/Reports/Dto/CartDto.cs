@@ -14,8 +14,10 @@ namespace TimeLine.Reports.Dto
     public class CartDetailDto
     {
 
-        public IEnumerable<decimal> Data { get; set; }
+        public IEnumerable<decimal?> Data { get; set; }
 
         public string Name { get; set; }
+
+        public string FieldName { get; set; }
     }
 }

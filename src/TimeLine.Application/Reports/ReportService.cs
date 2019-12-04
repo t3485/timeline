@@ -35,118 +35,53 @@ namespace TimeLine.Reports
         {
             var result = new CartDto();
 
-            switch (input.Type)
+            var cash = (await _reportManager.GetXJLLBs(input.Code)).OrderBy(x => x.REPORTDATE);
+            var bill = (await _reportManager.GetZCFZs(input.Code)).OrderBy(x => x.REPORTDATE);
+            var profit = (await _reportManager.GetLRBs(input.Code)).OrderBy(x => x.REPORTDATE);
+            var list = new List<CartDetailDto>();
+
+            foreach (var type in input.Type.Split(','))
             {
-                case "1":
-                    var cash = (await _reportManager.GetXJLLBs(input.Code)).OrderBy(x => x.REPORTDATE);
-                    var profit = (await _reportManager.GetLRBs(input.Code)).OrderBy(x => x.REPORTDATE);
+                if (type.Contains('.'))
+                {
+                    var field = type.Split('.');
 
-                    result.Date = cash.Select(x => x.REPORTDATE);
-                    result.Cart = new List<CartDetailDto>
+                    switch (field[0].ToLower())
                     {
-                        new CartDetailDto
-                        {
-                             Data = cash.Select(x => Convert.ToDecimal(x.NETOPERATECASHFLOW)),
-                             Name = "经营现金流净额"
-                        },
-                        new CartDetailDto
-                        {
-                             Data = profit.Select(x => Convert.ToDecimal(x.NETPROFIT)),
-                             Name = "净利润"
-                        }
-                    };
-                    break;
-                case "2":
-                    cash = (await _reportManager.GetXJLLBs(input.Code)).OrderBy(x => x.REPORTDATE);
-                    profit = (await _reportManager.GetLRBs(input.Code)).OrderBy(x => x.REPORTDATE);
-
-                    result.Date = cash.Select(x => x.REPORTDATE);
-                    result.Cart = new List<CartDetailDto>
-                    {
-                        new CartDetailDto
-                        {
-                             Data = cash.Select(x => Convert.ToDecimal(x.SALEGOODSSERVICEREC)),
-                             Name = "销售商品、提供劳务收到的现金"
-                        },
-                        new CartDetailDto
-                        {
-                             Data = profit.Select(x => Convert.ToDecimal(x.OPERATEREVE)),
-                             Name = "营业收入"
-                        }
-                    };
-                    break;
-                case "3":
-                    cash = (await _reportManager.GetXJLLBs(input.Code)).OrderBy(x => x.REPORTDATE);
-                    var bill = (await _reportManager.GetZCFZs(input.Code)).OrderBy(x => x.REPORTDATE);
-                    profit = (await _reportManager.GetLRBs(input.Code)).OrderBy(x => x.REPORTDATE);
-
-                    result.Date = cash.Select(x => x.REPORTDATE);
-                    result.Cart = new List<CartDetailDto>
-                    {
-                        new CartDetailDto
-                        {
-                             Data = bill.Select(x => Convert.ToDecimal(x.MONETARYFUND)),
-                             Name = "现金余额"
-                        },
-                        new CartDetailDto
-                        {
-                             Data = cash.Select(x => Convert.ToDecimal(x.SUMINVFLOWOUT)),
-                             Name = "投资支出"
-                        },
-                        new CartDetailDto
-                        {
-                             Data = cash.Select(x => Convert.ToDecimal(x.SUMINVFLOWOUT)),
-                             Name = "有息负债"
-                        }
-                    };
-                    break;
-                default:
-                    cash = (await _reportManager.GetXJLLBs(input.Code)).OrderBy(x => x.REPORTDATE);
-                    bill = (await _reportManager.GetZCFZs(input.Code)).OrderBy(x => x.REPORTDATE);
-                    profit = (await _reportManager.GetLRBs(input.Code)).OrderBy(x => x.REPORTDATE);
-                    var list = new List<CartDetailDto>();
-
-                    foreach (var type in input.Type.Split(','))
-                    {
-                        if (type.Contains('.'))
-                        {
-                            var field = type.Split('.');
-
-                            switch (field[0].ToLower())
+                        case "zcfz":
+                            var d = _typeHelper.GetPropertyAccess<ZCFZ, string>(field[1]);
+                            list.Add(new CartDetailDto
                             {
-                                case "zcfz":
-                                    var d = _typeHelper.GetPropertyAccess<ZCFZ, string>(field[1]);
-                                    list.Add(new CartDetailDto
-                                    {
-                                        Data = bill.Select(d).Select(x => Convert.ToDecimal(x)),
-                                        Name = _typeHelper.GetPropertyDescribe<ZCFZ>(field[1])
-                                    });
-                                    break;
-                                case "lr":
-                                    var lrd = _typeHelper.GetPropertyAccess<LRB, string>(field[1]);
-                                    list.Add(new CartDetailDto
-                                    {
-                                        Data = profit.Select(lrd).Select(x => Convert.ToDecimal(x)),
-                                        Name = _typeHelper.GetPropertyDescribe<LRB>(field[1])
-                                    });
-                                    break;
-                                case "xjll":
-                                    var xjlld = _typeHelper.GetPropertyAccess<XJLLB, string>(field[1]);
-                                    list.Add(new CartDetailDto
-                                    {
-                                        Data = cash.Select(xjlld).Select(x => Convert.ToDecimal(x)),
-                                        Name = _typeHelper.GetPropertyDescribe<XJLLB>(field[1])
-                                    });
-                                    break;
-                            }
-                        }
+                                Data = bill.Select(d).Select(x => string.IsNullOrEmpty(x) ? null : (decimal?)Convert.ToDecimal(x)),
+                                Name = _typeHelper.GetPropertyDescribe<ZCFZ>(field[1]),
+                                FieldName = field[1]
+                            });
+                            break;
+                        case "lr":
+                            var lrd = _typeHelper.GetPropertyAccess<LRB, string>(field[1]);
+                            list.Add(new CartDetailDto
+                            {
+                                Data = profit.Select(lrd).Select(x => string.IsNullOrEmpty(x) ? null : (decimal?)Convert.ToDecimal(x)),
+                                Name = _typeHelper.GetPropertyDescribe<LRB>(field[1]),
+                                FieldName = field[1]
+                            });
+                            break;
+                        case "xjll":
+                            var xjlld = _typeHelper.GetPropertyAccess<XJLLB, string>(field[1]);
+                            list.Add(new CartDetailDto
+                            {
+                                Data = cash.Select(xjlld).Select(x => string.IsNullOrEmpty(x) ? null : x == null ? null : (decimal?)Convert.ToDecimal(x)),
+                                Name = _typeHelper.GetPropertyDescribe<XJLLB>(field[1]),
+                                FieldName = field[1]
+                            });
+                            break;
                     }
-                    result.Cart = list;
-                    if (result.Cart.Count() > 0)
-                    {
-                        result.Date = cash.Select(x => x.REPORTDATE);
-                    }
-                    break;
+                }
+            }
+            result.Cart = list;
+            if (result.Cart.Count() > 0)
+            {
+                result.Date = cash.Select(x => x.REPORTDATE);
             }
 
             return result;

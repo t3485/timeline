@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace TimeLine.Reports
@@ -564,6 +565,7 @@ namespace TimeLine.Reports
         /// <summary>
         /// 应付票据及应付账款
         /// </summary>
+        [Display(Name = "应付票据及应付账款")]
         public string ACCOUNTBILLPAY { get; set; }
 
         /// <summary>
