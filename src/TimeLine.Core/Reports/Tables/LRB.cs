@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace TimeLine.Reports
+namespace TimeLine.Reports.Tables
 {
     public class LRB
     {

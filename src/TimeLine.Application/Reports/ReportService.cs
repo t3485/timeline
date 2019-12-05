@@ -10,6 +10,7 @@ using TimeLine.Service;
 using AutoMapper;
 using TimeLine.Repository;
 using TimeLine.Infrustruct;
+using TimeLine.Reports.Tables;
 
 namespace TimeLine.Reports
 {
@@ -19,16 +20,19 @@ namespace TimeLine.Reports
         private ITableRepository _tableRepository;
         private IReportManager _reportManager;
         private ITypeHelper _typeHelper;
+        private IStringAnylize _stringAnylize;
 
         public ReportService(IRequestsService requestsService,
             ITableRepository tableRepository,
             IReportManager reportManager,
-            ITypeHelper typeHelper)
+            ITypeHelper typeHelper,
+            IStringAnylize stringAnylize)
         {
             _requestsService = requestsService;
             _tableRepository = tableRepository;
             _reportManager = reportManager;
             _typeHelper = typeHelper;
+            _stringAnylize = stringAnylize;
         }
 
         public async Task<CartDto> GetCart(CartSearchDto input)

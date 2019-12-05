@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 using Abp.Domain.Repositories;
 using System.Linq;
 using TimeLine.Service;
+using TimeLine.Reports.Tables;
 
 namespace TimeLine.Reports
 {

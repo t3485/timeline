@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace TimeLine.Infrustruct
 {
     public class StringAnylize : IStringAnylize
     {
+        private static string[] oper = { "+", "-", "*", "/" };
+
         public Queue<string> Middle2SuffixExp(string exp)
         {
             Stack<char> s = new Stack<char>();
@@ -56,6 +59,8 @@ namespace TimeLine.Infrustruct
                 }
             }
 
+            if (r.Length > 0)
+                result.Enqueue(r.ToString());
             while (s.Count > 0)
                 result.Enqueue(s.Pop().ToString());
             return result;
@@ -67,6 +72,11 @@ namespace TimeLine.Infrustruct
                 i++;
 
             return i;
+        }
+
+        public bool IsOperation(string o)
+        {
+            return oper.Contains(o);
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TimeLine.Reports
+namespace TimeLine.Reports.Comparers
 {
     public class ZCFZComparer : IEqualityComparer<ZCFZ>
     {
