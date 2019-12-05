@@ -21,18 +21,21 @@ namespace TimeLine.Reports
         private IReportManager _reportManager;
         private ITypeHelper _typeHelper;
         private IStringAnylize _stringAnylize;
+        private ICustomReportService _customReportService;
 
         public ReportService(IRequestsService requestsService,
             ITableRepository tableRepository,
             IReportManager reportManager,
             ITypeHelper typeHelper,
-            IStringAnylize stringAnylize)
+            IStringAnylize stringAnylize,
+            ICustomReportService customReportService)
         {
             _requestsService = requestsService;
             _tableRepository = tableRepository;
             _reportManager = reportManager;
             _typeHelper = typeHelper;
             _stringAnylize = stringAnylize;
+            _customReportService = customReportService;
         }
 
         public async Task<CartDto> GetCart(CartSearchDto input)
@@ -44,43 +47,17 @@ namespace TimeLine.Reports
             var profit = (await _reportManager.GetLRBs(input.Code)).OrderBy(x => x.REPORTDATE);
             var list = new List<CartDetailDto>();
 
+            _customReportService.SetData(bill);
+            _customReportService.SetData(cash);
+            _customReportService.SetData(profit);
+
             foreach (var type in input.Type.Split(','))
             {
-                if (type.Contains('.'))
-                {
-                    var field = type.Split('.');
-
-                    switch (field[0].ToLower())
-                    {
-                        case "zcfz":
-                            var d = _typeHelper.GetPropertyAccess<ZCFZ, string>(field[1]);
-                            list.Add(new CartDetailDto
-                            {
-                                Data = bill.Select(d).Select(x => string.IsNullOrEmpty(x) ? null : (decimal?)Convert.ToDecimal(x)),
-                                Name = _typeHelper.GetPropertyDescribe<ZCFZ>(field[1]),
-                                FieldName = field[1]
-                            });
-                            break;
-                        case "lr":
-                            var lrd = _typeHelper.GetPropertyAccess<LRB, string>(field[1]);
-                            list.Add(new CartDetailDto
-                            {
-                                Data = profit.Select(lrd).Select(x => string.IsNullOrEmpty(x) ? null : (decimal?)Convert.ToDecimal(x)),
-                                Name = _typeHelper.GetPropertyDescribe<LRB>(field[1]),
-                                FieldName = field[1]
-                            });
-                            break;
-                        case "xjll":
-                            var xjlld = _typeHelper.GetPropertyAccess<XJLLB, string>(field[1]);
-                            list.Add(new CartDetailDto
-                            {
-                                Data = cash.Select(xjlld).Select(x => string.IsNullOrEmpty(x) ? null : x == null ? null : (decimal?)Convert.ToDecimal(x)),
-                                Name = _typeHelper.GetPropertyDescribe<XJLLB>(field[1]),
-                                FieldName = field[1]
-                            });
-                            break;
-                    }
-                }
+                var exp = _stringAnylize.Middle2SuffixExp(type);
+                var data = _customReportService.GetCartByExperssion(exp);
+                if (string.IsNullOrWhiteSpace(_stringAnylize.Describe))
+                    data.Name = _stringAnylize.Describe;
+                list.Add(data);
             }
             result.Cart = list;
             if (result.Cart.Count() > 0)

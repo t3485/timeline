@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Abp.EntityFrameworkCore;
 using TimeLine.Reports;
+using TimeLine.Reports.Tables;
 using TimeLine.Repository;
 
 namespace TimeLine.EntityFrameworkCore.Repositories

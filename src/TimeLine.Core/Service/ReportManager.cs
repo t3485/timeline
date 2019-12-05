@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TimeLine.Reports;
+using TimeLine.Reports.Comparers;
+using TimeLine.Reports.Tables;
 using TimeLine.Repository;
 
 namespace TimeLine.Service

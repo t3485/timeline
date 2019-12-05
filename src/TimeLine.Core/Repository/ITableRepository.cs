@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using TimeLine.Reports;
+using TimeLine.Reports.Tables;
 
 namespace TimeLine.Repository
 {

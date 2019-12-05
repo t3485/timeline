@@ -9,6 +9,8 @@ namespace TimeLine.Infrustruct
     {
         private static string[] oper = { "+", "-", "*", "/" };
 
+        public string Describe { get; set; }
+
         public Queue<string> Middle2SuffixExp(string exp)
         {
             Stack<char> s = new Stack<char>();
@@ -17,6 +19,8 @@ namespace TimeLine.Infrustruct
             int i = 0;
             StringBuilder r = new StringBuilder();
             char c;
+
+            Describe = string.Empty;
 
             while (i < b.Length)
             {
@@ -38,9 +42,8 @@ namespace TimeLine.Infrustruct
                     case ')':
                         result.Enqueue(r.ToString());
                         while ((c = s.Pop()) != '(')
-                        {
                             result.Enqueue(c.ToString());
-                        }
+
                         r.Clear();
                         break;
                     case '*':
@@ -50,8 +53,15 @@ namespace TimeLine.Infrustruct
                         s.Push(c);
                         break;
                     case '(':
-                        r.Clear();
                         s.Push(c);
+                        break;
+                    case '{':
+                        result.Enqueue(r.ToString());
+                        r.Clear();
+                        break;
+                    case '}':
+                        Describe = r.ToString();
+                        r.Clear();
                         break;
                     default:
                         r.Append(c);

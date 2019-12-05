@@ -35,6 +35,7 @@ namespace TimeLine.Reports.Tables
         /// <summary>
         /// 货币资金
         /// </summary>
+        [Display(Name = "货币资金")]
         public string MONETARYFUND { get; set; }
 
         /// <summary>
@@ -255,6 +256,7 @@ namespace TimeLine.Reports.Tables
         /// <summary>
         /// 短期借款
         /// </summary>
+        [Display(Name = "短期借款")]
         public string STBORROW { get; set; }
 
         /// <summary>
@@ -385,6 +387,7 @@ namespace TimeLine.Reports.Tables
         /// <summary>
         /// 一年内到期的非流动负债
         /// </summary>
+        [Display(Name = "一年内到期的非流动负债")]
         public string NONLLIABONEYEAR { get; set; }
 
         /// <summary>
@@ -400,6 +403,7 @@ namespace TimeLine.Reports.Tables
         /// <summary>
         /// 长期借款
         /// </summary>
+        [Display(Name = "长期借款")]
         public string LTBORROW { get; set; }
 
         /// <summary>

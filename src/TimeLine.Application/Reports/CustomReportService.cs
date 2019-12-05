@@ -25,26 +25,26 @@ namespace TimeLine.Reports
             _typeHelper = typeHelper;
         }
 
-        public void SetZcfzData(IEnumerable<ZCFZ> data)
+        public void SetData(IEnumerable<ZCFZ> data)
         {
             _bill = data;
         }
 
-        public void SetZcfzData(IEnumerable<LRB> data)
+        public void SetData(IEnumerable<LRB> data)
         {
             _profit = data;
         }
 
-        public void SetZcfzData(IEnumerable<XJLLB> data)
+        public void SetData(IEnumerable<XJLLB> data)
         {
             _cash = data;
         }
 
-        private CartDetailDto GetCartByExperssion(Queue<string> queue)
+        public CartDetailDto GetCartByExperssion(Queue<string> queue)
         {
             Stack<string> variable = new Stack<string>();
-            IEnumerable<float?> computedVar = null;
-            string s;
+            IEnumerable<decimal> computedVar = null;
+            string s, name = string.Empty, filedname = string.Empty;
 
             while (queue.Count > 0)
             {
@@ -52,20 +52,33 @@ namespace TimeLine.Reports
                 if (_stringAnylize.IsOperation(s))
                 {
                     if (computedVar == null)
-                    {
-                        var v2 = GetCartData();
-                    }
+                        computedVar = GetCartData(variable.Pop(), out _);
+
+                    var v1 = GetCartData(variable.Pop(), out _);
+                    computedVar = Add(computedVar, v1);
+                }
+                else if (queue.Count == 0)
+                {
+                    computedVar = GetCartData(s, out name);
+                    filedname = GetCartName(s).Item2;
                 }
                 else
                 {
                     variable.Push(s);
                 }
             }
+            return new CartDetailDto
+            {
+                Data = computedVar,
+                Name = name,
+                FieldName = filedname
+            };
         }
 
-        private IEnumerable<decimal?> GetCartData(string e)
+        private IEnumerable<decimal> GetCartData(string e, out string name)
         {
-            IEnumerable<decimal?> result = null;
+            IEnumerable<decimal> result = null;
+            name = string.Empty;
             if (e.Contains('.'))
             {
                 var field = GetCartName(e);
@@ -74,20 +87,23 @@ namespace TimeLine.Reports
                 {
                     case "zcfz":
                         var d = _typeHelper.GetPropertyAccess<ZCFZ, string>(field.Item2);
-                        result = _bill.Select(d).Select(x => string.IsNullOrEmpty(x) ? null : (decimal?)Convert.ToDecimal(x));
+                        result = _bill.Select(d).Select(x => string.IsNullOrEmpty(x) ? 0 : Convert.ToDecimal(x));
+                        name = _typeHelper.GetPropertyDescribe<ZCFZ>(field.Item2);
                         break;
                     case "lr":
                         var lrd = _typeHelper.GetPropertyAccess<LRB, string>(field.Item2);
-                        result = _profit.Select(lrd).Select(x => string.IsNullOrEmpty(x) ? null : (decimal?)Convert.ToDecimal(x));
+                        result = _profit.Select(lrd).Select(x => string.IsNullOrEmpty(x) ? 0 : Convert.ToDecimal(x));
+                        name = _typeHelper.GetPropertyDescribe<LRB>(field.Item2);
                         break;
                     case "xjll":
                         var xjlld = _typeHelper.GetPropertyAccess<XJLLB, string>(field.Item2);
-                        result = _cash.Select(xjlld).Select(x => string.IsNullOrEmpty(x) ? null : x == null ? null : (decimal?)Convert.ToDecimal(x));
+                        result = _cash.Select(xjlld).Select(x => string.IsNullOrEmpty(x) ? 0 : Convert.ToDecimal(x));
+                        name = _typeHelper.GetPropertyDescribe<XJLLB>(field.Item2);
                         break;
                 }
             }
 
-            return result ?? new List<decimal?>();
+            return result ?? new List<decimal>();
         }
 
         private Tuple<string, string> GetCartName(string e)
@@ -99,6 +115,20 @@ namespace TimeLine.Reports
                 return new Tuple<string, string>(f[0], f[1]);
             }
             return new Tuple<string, string>(DefaultTable, e);
+        }
+
+        private IEnumerable<decimal> Add(IEnumerable<decimal> a, IEnumerable<decimal> b)
+        {
+            var v1 = (a.Count() > b.Count() ? a : b).ToList();
+            var v2 = a.Count() > b.Count() ? b : a;
+
+
+            for (int i = 0; i < v2.Count(); i++)
+            {
+                v1[i] += v2.ElementAt(i);
+            }
+
+            return v1;
         }
     }
 }

@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TimeLine.Reports;
 using TimeLine.Plans;
+using TimeLine.Reports.Tables;
 
 namespace TimeLine.EntityFrameworkCore
 {

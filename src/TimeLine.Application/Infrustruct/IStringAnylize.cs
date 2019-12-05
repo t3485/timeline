@@ -12,5 +12,7 @@ namespace TimeLine.Infrustruct
         int SkipSpace(string s, int i);
 
         bool IsOperation(string o);
+
+        string Describe { get; set; }
     }
 }
