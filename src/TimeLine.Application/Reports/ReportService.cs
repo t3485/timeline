@@ -55,7 +55,7 @@ namespace TimeLine.Reports
             {
                 var exp = _stringAnylize.Middle2SuffixExp(type);
                 var data = _customReportService.GetCartByExperssion(exp);
-                if (string.IsNullOrWhiteSpace(_stringAnylize.Describe))
+                if (!string.IsNullOrEmpty(_stringAnylize.Describe))
                     data.Name = _stringAnylize.Describe;
                 list.Add(data);
             }
